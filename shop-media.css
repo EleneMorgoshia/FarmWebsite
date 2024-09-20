@@ -1,0 +1,670 @@
+@media(min-width:350px){
+    /* in the header part there will be logo and the burgerManu */
+    header{
+        gap:0%;
+    }
+    
+    .first-header-div{
+        margin-right:90px;
+    }
+    .first-header-div img{
+        width:60px;
+        height:60px;
+    }
+    .first-header-div p{
+        font-size:16px;
+        margin-left:-30px;
+    }
+
+    nav{
+        display:none;
+    }
+
+    .burger-manu{
+        display:block;
+        cursor:pointer;
+        margin-top:20px;
+        margin-left:-10px;
+    }
+
+    /*main part */
+    /*first main section */
+    main{
+        width:100%;
+        overflow-x: hidden;
+    }
+    .category-div{
+        display:none;
+    }   
+
+    .basket{
+        width:300px;
+        left:8%;
+    }
+
+    .link-div{
+        width:350px;
+        gap:5%;
+        margin-left:80px;
+    }
+
+    .link-div p{
+        font-size:12px;
+    }
+
+    .signIn{
+        width:350px;
+        height:500px;
+        left:18.5%;
+    }
+    .XvsSign h2{
+        font-size:25px;
+        margin-left:80px;
+    }
+
+    .XvsSign img{
+        margin-left:100px;
+    }
+
+    .x-button{
+        margin-left:270px;
+    }
+    .sign-in-form{
+        margin-left:20px;
+    }
+
+    .registration{
+        width:330px;
+        height:500px;
+        left:22.5%;
+    }
+    .registration img{
+        margin-left:300px;
+    }
+
+
+    .registrationForm input{
+        width:300px;
+    }
+    .Account-div{
+        margin-left:-50px;
+        margin-top:10px;
+    }
+    .products-div-mother{
+        grid-template-columns:repeat(1,230px);
+        justify-content: center; /* Centers items horizontally */
+        align-content: center; /* Centers items vertically */
+        gap:50px;
+        margin-left:80px;
+        margin-top:80px;
+    }
+
+    .child-div{
+        margin-left:0px;
+    }
+    /* footer */
+    .mother-div{
+        grid-template-columns: repeat(1,300px);
+    }
+
+    .child-div{
+        margin-top:20px;
+    }
+
+    .lastParagraph{
+        text-align:center;
+        width:350px;
+        margin-left:0px;
+        font-size:16px;
+    }
+}
+
+@media(min-width:650px){
+    /* in the header part there will be logo and the burgerManu */
+    header{
+        gap:10%;
+    }
+    
+    .first-header-div{
+        margin-right:250px;
+    }
+    .first-header-div img{
+        width:60px;
+        height:60px;
+    }
+    .first-header-div p{
+        font-size:16px;
+        margin-left:-20px;
+    }
+
+    nav{
+        display:none;
+    }
+
+    .burger-manu{
+        display:block;
+        margin-top:20px;
+        margin-left:-10px;
+        
+    }
+
+    .burger-manu-div{
+        right:7%;
+    }
+
+    .burger-manu-div img{
+        width:25px;
+        height:25px;
+    }
+    /*main part */
+    /* first main section */
+    main{
+        width:100%;
+        overflow-x: hidden;
+
+    }
+    .category-div{
+        display:none;
+    }   
+
+    .basket{
+        width:300px;
+        left:8%;
+    }
+
+    .link-div{
+        width:640px;
+        gap:5%;
+        /* margin-left:80px; */
+    }
+
+    .link-div p{
+        font-size:16px;
+    }
+
+    .signIn{
+        width:350px;
+        height:500px;
+        left:18.5%;
+    }
+    .XvsSign h2{
+        font-size:25px;
+        margin-left:80px;
+    }
+
+    .XvsSign img{
+        margin-left:100px;
+    }
+
+    .x-button{
+        margin-left:270px;
+    }
+    .sign-in-form{
+        margin-left:20px;
+    }
+
+    .Account-div{
+        margin-left:-50px;
+        margin-top:10px;
+    }
+    .products-div-mother{
+        grid-template-columns:repeat(1,230px);
+        justify-content: center; /* Centers items horizontally */
+        align-content: center; /* Centers items vertically */
+        gap:50px;
+        margin-left:0px;
+        margin-top:80px;
+    }
+
+    .child-div{
+        margin-left:0px;
+    }
+    /* footer */
+    footer{
+        width:100%;
+    }
+    .mother-div{
+        grid-template-columns: repeat(1,300px);
+    }
+
+    .child-div{
+        margin-top:20px;
+    }
+
+    .lastParagraph{
+        text-align:center;
+        width:350px;
+        margin-left:0px;
+        font-size:16px;
+    }
+
+      /* footer */
+      .mother-div{
+        grid-template-columns: repeat(1,300px);
+    }
+
+    .child-div{
+        margin-top:20px;
+    }
+
+    .lastParagraph{
+        text-align:center;
+        width:650px;
+
+        font-size:16px;
+    }
+}
+
+@media(min-width:1036px){
+    /* in the header part there will be logo and the burgerManu */
+    header{
+        gap:15%;
+        overflow-x: hidden;
+ 
+    }
+    
+    .first-header-div{
+        margin-right:250px;
+    }
+    .first-header-div img{
+        width:80px;
+        height:80px;
+    }
+    .first-header-div p{
+        font-size:20px;
+        margin-left:-35px;
+    }
+
+    nav{
+        display:none;
+    }
+
+    .burger-manu{
+        display:block;
+        margin-top:20px;
+        margin-left:-10px;
+        
+    }
+
+    .burger-manu-div{
+        right:15%;
+    }
+
+    .burger-manu-div img{
+        width:15px;
+        height:15px;
+    }
+    /*main part */
+    /* first main section */
+    main{
+        width:100%;
+       overflow-x: hidden;
+
+    }
+    .category-div{
+        display:none;
+    }   
+
+    .basket{
+        width:260px;
+        left:8%;
+    }
+
+    .link-div{
+        width:700px;
+        gap:5%;
+        margin-left:120px;
+    }
+
+    .link-div p{
+        font-size:16px;
+    }
+
+    .signIn{
+        width:520px;
+        height:500px;
+        left:18.5%;
+    }
+    .XvsSign h2{
+        font-size:25px;
+        margin-left:160px;
+    }
+
+    .XvsSign img{
+        margin-left:200px;
+    }
+
+    .x-button{
+        margin-left:270px;
+    }
+    .sign-in-form{
+        margin-left:70px;
+    }
+
+    .Account-div{
+        margin-left:-300px;
+        margin-top:10px;
+    }
+    .products-div-mother{
+        grid-template-columns:repeat(1,230px);
+        justify-content: center; /* Centers items horizontally */
+        align-content: center; /* Centers items vertically */
+        gap:50px;
+        margin-left:0px;
+        margin-top:80px;
+    }
+
+    .child-div{
+        margin-left:0px;
+    }
+    /* footer */
+    footer{
+        width:100%;
+    }
+    .mother-div{
+        grid-template-columns: repeat(1,300px);
+    }
+
+    .child-div{
+        margin-top:20px;
+    }
+
+    .lastParagraph{
+        text-align:center;
+        width:350px;
+        margin-left:0px;
+        font-size:16px;
+    }
+
+      /* footer */
+      .mother-div{
+        grid-template-columns: repeat(1,300px);
+    }
+
+    .child-div{
+        margin-top:20px;
+    }
+
+    .lastParagraph{
+        text-align:center;
+        width:650px;
+
+        font-size:16px;
+    }
+}
+
+@media(min-width:1300px){
+    /* in the header part there will be logo and the burgerManu */
+    header{
+        overflow-x: hidden;
+        /* writing flex in order to position elements horizontally in the center */
+        display:flex;
+        flex-direction:row;
+        justify-content: center;
+        align-items:center;
+
+        margin-top:-5px;
+        gap:25%;
+        /* width:100%; */
+        height:120px;
+        padding:0;
+        margin-left:0;
+        margin-right:0;
+    }
+
+    .first-header-div{
+         /* writing flex in order to position elements horizontally in the center */
+        display:flex;
+        justify-content: center;
+        align-items:center;
+        text-align:center;
+
+        gap:0px;
+        padding:10px;
+        margin-top:-10px;
+        margin-right:0px;
+    }
+    .first-header-div img{
+        width:80px;
+        height:80px;
+    }
+    .first-header-div p{
+        font-size:20px;
+        margin-top:35px;
+        margin-left:-35px;
+    }
+
+    .first-header-div a{
+        text-decoration: none;
+        color:#000;
+    }
+    .first-header-div a:hover{
+        color:#D97823;
+        cursor:pointer;
+        font-weight: bold;
+        font-size:19px;
+    }
+    
+
+    nav{
+        display:block;
+        font-family:Inknut Antiqua ;
+        margin-top:19px;
+        /* margin-top:-5px; */
+
+        padding:10px;
+    }
+
+    .burger-manu{
+        display:none;
+        margin-top:20px;
+        margin-left:-10px;
+        
+    }
+
+    /*main part */
+    /* first main section */
+
+    main{
+         /* writign flex in order to position elements vertically in the center */
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+        background-color: #F5F5F5;
+    
+        width: 100%;
+        /* margin: 0 auto; Center the main container */
+        padding: 0;
+    
+    }
+
+    .first-main-section{
+        position:relative;
+        display:flex;
+        flex-direction:row;
+    
+        margin-bottom:150px;
+    }
+
+    .category-div{
+        display:block;
+    }   
+
+
+    .basket{
+        position:fixed; 
+        top:20%;
+        left: 60%; 
+        overflow-y:auto;
+        left:60%;
+        width:500px;
+        /* height:auto; */
+        max-height:70vh;
+        border:1px solid black;
+        border-radius:3px;
+        display:flex;
+        flex-direction:row;
+        justify-content: center;
+        align-items:center;
+        background-color:#A1A624;
+        display:none;
+        z-index:99999999;
+    }
+
+    .link-div{
+        display:flex;
+        flex-direction:row;
+        justify-content: center;
+        align-items:center;
+        gap:10%;
+        width:750px;
+        height:50px;
+        border-radius:6px;
+        background-color: #fff;
+        margin-top:60px;
+        margin-left:0px;
+    }
+
+    .link-div p{
+        font-size:18px;
+        transition:0,5s;
+        color:#400505;
+        font-weight: bold;
+    }
+
+    .signIn{
+        position:absolute;
+        top:3%;
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+        width:520px;
+        height:460px;
+        border:none;
+        z-index:9;
+        border-radius:3px;
+        box-shadow: 25px 25px 25px #400505;
+        background-color:#fff;
+        display:none;
+    }
+    .XvsSign h2{
+        color:#400505;
+        font-size:25px;
+        margin-left:190px;
+        margin-top:20px
+    }
+
+    .XvsSign img{
+        margin-bottom:31px; 
+        margin-left:150px; 
+        cursor:pointer;
+    }
+
+    .x-button{
+        margin-left:450px;
+    }
+    .sign-in-form{
+        font-family:'Inknut Antiqua';
+        margin-top:10px;
+        margin-left:90px;
+
+    }
+
+    .registration{
+        position:absolute;
+        top:3%;
+        left:10%;
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+        width:600px;
+        height:500px;
+        border:none;
+        z-index:9999;
+        border-radius:3px;
+        box-shadow: 25px 25px 25px #400505;
+        background-color:#fff;
+        display:none;
+    }
+    .registration img{
+        width:20px;
+        height:20px;
+        margin-left:550px;
+        margin-top:-10px;
+        cursor:pointer;
+    }
+
+
+    .registrationForm input{
+        width:340px;
+        height:56px;
+        border-radius:3px;
+        margin-top:20px;
+        padding-left:10px;
+        font-size:16px;
+        font-family:'Inknut Antiqua';
+        color:#400505;
+    }
+
+    .Account-div{
+        display:flex;
+        flex-direction:row;
+        justify-content:center;
+        align-items:center;
+        gap:10px;
+        margin-top:32px;
+        margin-left:-550px;
+        margin-bottom:-30px;
+        display:none;
+    }
+    .products-div-mother{
+        margin-top:50px;
+        display:grid;
+        grid-template-columns:repeat(3,230px);
+        gap:25px;
+        margin-left:0px;
+    
+    }
+
+    .child-div{
+        display:flex;
+        flex-direction:column;
+        justify-content: center;
+        align-items:center;
+        background-color: #fff;
+        height:330px;
+        
+        margin-top:20px;
+        margin-left:0px;
+    }
+
+   
+    /* footer */
+    footer{
+        overflow-x: hidden;
+        display:flex;
+        flex-direction:column;
+        justify-content: center;
+        align-items:center;
+    }
+    .mother-div{
+        display:grid;
+        grid-template-columns: repeat(3,300px);
+
+        margin-top:0px;
+    }
+
+    .child-div{
+        margin-top:40px;
+    }
+
+    .lastParagraph{
+        text-align:center;
+        width:800px;
+        margin-left:0px;
+        font-size:16px;
+    }
+}

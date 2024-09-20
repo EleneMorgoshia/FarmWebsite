@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/shop.css">
+    <link rel="stylesheet" href="/shop-media.css">
+</head>
+<body>
+   <!--different header part -->
+    <header>
+        <!--first header div - logo and the farm name-->
+        <div class="first-header-div">
+            <img src="/designs/real-logo-without-backgroun.png" alt="">
+            <p><a href="/index.html">Morgo's Homestead</a></p>
+        </div>
+
+        <!--second header div - navbar-->
+        <nav>
+            <ul>
+                <li><a href="/shop.html">Shop</a></li>
+                <li><a href="/aboutUs.html">About Us</a></li>
+                <li><a href="/signin.html">Sign In</a></li>
+            </ul>
+        </nav>
+
+        <!--they will be appeared on the small screen-->
+        <img class="burger-manu" id="burgerManu" src="/images/menu.png" alt="">
+        <div class="burger-manu-div" id="burgerMenuDiv">
+            <img id="exitBtn" src="/images/x-icon.png" alt="">
+            
+            <p><a href="/aboutUs.html">About Us</a></p>
+            <p><a href="/signin.html">Sign In</a></p>
+            <p><a href="/homepage.html">Home Page</a></p>
+        </div>
+    </header>
+
+    <!--creating the main part-->
+    <main>
+        <!--creating the first main section -->
+        <section class="first-main-section">
+            <!--categories-->
+            <div class="category-div">
+                <h2>Catogories</h2>
+                <hr>
+                <ul>
+                    <li id="meatCategory">Meat</li>
+                    <li id="vegetablesCategory">Vegetables</li>
+                    <li id="fruitsCategory">Fruits</li>
+                    <li id="milkCategory">Dairy & Milk & Eggs</li>
+                    <li id="flowersCategory">Flowers</li>
+                </ul>
+            </div>
+
+            <!--links and products-->
+            <div class="linksVsProducts">
+                <!--this div will be appeared when user click on the plus div-->
+                <div   id="shoppingCartDiv" class="basket">
+                    <img id="xButton" class="x-button" src="/images/x-icon.png" alt="" width="20" height="20" >
+                    <h1>Your Shopping Cart</h1>
+                    <ol id="basketUl">
+                        <!--img and price ( flex-direction: column)-->
+                    </ol>
+                    <p style="font-size:18px ; margin-left: 10px; cursor:pointer;" >Total Price:<span id="sumOfPrices"></span></p>
+                </div>
+
+                <!--links-->
+                <div class="link-div">
+                    <p id="productsLink">Products</p>
+                    <p id="basketLink">Baskets</p>
+                    <p id="saledLink">Sale</p>
+                    <p id="vegetarianLink">Vegetarian</p>
+                    <img id="basketClick" src="/images/basket-icon.png" alt="">
+                </div>
+
+                
+                <!--------------------------------------->
+                <!--this div will be appeared when user log in the page -->
+                <div id="AccountDiv" class="Account-div">
+                    <img id="userLogo" src="/images/person-icon.png" alt="">
+                    <p id="accountUser"></p>
+                    <p style="display:none" id="AccountPs"></p>
+                </div>
+                <!-------------------------------------->
+
+                
+                <!------------------------------------------>
+                <!--account information div (+ sign out)-->
+                <div id="personalInfo" class="personalInfo">
+                    <img id="exitIcon" class="exitIcon" src="/images/x-icon.png" alt="" width="18" height="18">
+                    <h1>Personal Information</h1>
+
+                    <ul class="personal-info-ul">
+                        <li>Your UserName:<span id="personalName"></span></li>
+                        <li>Your Password:<span id="personalPassword"></span></li>
+                    </ul>
+
+                    <button id="signOut">Sign Out</button>
+                </div>
+                <!------------------------------------------>
+
+
+                
+                <!--this div will be appeared when user click on the plus button (user need to  be signed in order to buy new item )-->
+                <!----------------------------------------------->
+                <div class="signIn" id="signInDiv">
+                    <div class="XvsSign">
+                        <h2>Sign In</h2>
+                        <img id="xIcon" src="/images/x-icon.png" alt="" width="20" height="20">
+                    </div>
+
+                    <p class="welcoming-p">
+                        Welcome to Morgo's Homestead! Explore our farm’s bounty and enjoy our fresh, local offerings
+                    </p>
+
+                    <form class="sign-in-form">
+                        <input id="enteredName" type="text" placeholder="Enter Your UserName"> <br>
+                        <input id="enteredPassword" type="password" placeholder="Enter Your Password"> <br>
+                        <p id="wrongData"></p>
+                        <p id="incorrectData" style="color:#400505; display:none">Your email or password were incorrect.</p>
+                        <input id="continueButton" class="continue-btn" type="button" value="Continue">
+    
+                        <p class="register-p">Do not have an account?<u style="cursor:pointer" id="regLink">Register</u></p>
+                    </form>
+                </div>
+
+                <!--this div will be appeared when user click on the link of registration-->
+                <div class="registration" id="registrationDiv">
+                    <img id="exitBtnnn" src="/images/x-icon.png" alt="">
+                    <h2 class="head-registration">Registration</h2>
+                    <p class="welcoming-p">
+                        Welcome to Morgo's Homestead! Explore our farm’s bounty and enjoy our fresh, local offerings
+                    </p>
+
+                    <form class="registrationForm" >
+                        <input id="regName" type="text" placeholder="Enter Your Firstname"> 
+                        <input id="regPass" type="password" placeholder="Enter Desired Password"> 
+                        <input id="registeredBtn" class="continue-btn" type="button" value="Registration">
+
+                        <p class="register-p">Do have an account?<u  style="cursor:pointer; color:#400505;font-weight: bold;">SignIn</u></p>
+                    </form>
+                </div>
+                <!----------------------------------------------->
+                <!--products-->
+                <div id="productsDiv" class="products-div-mother" >
+                   <!--fruits - children -->
+                    <!--first child-->
+                    <div class="child-div fruits vegetarian">
+                        <img class="productImage" src="/images/fruits-apple.jpg" alt="">
+                        <p class="title">Golden Apples</p>
+                        <div>
+                            <p class="productPrice"><span class="priceNumber">5.00</span>$</p>
+                            <p class="plus">+</p>
+                        </div>
+                    </div>
+                    <!--second child-->
+                    <div class="child-div fruits vegetarian"  >
+                        <img class="productImage" src="/images/fruits-grapes.jpg" alt="">
+                        <p class="title">Saperavi Grapes</p>
+                        <div>
+                            <p class="productPrice"><span class="priceNumber">6.00</span>$</p>
+                            <p class="plus">+</p>
+                        </div>
+                    </div>
+                    <!--third child-->
+                    <div class="child-div fruits vegetarian"  >
+                        <img class="productImage" src="/images/fruits-strawbery.jpg" alt="">
+                        <p class="title">Jewel Strawberries</p>
+                        <div>
+                            <p class="productPrice"><span class="priceNumber">5.30</span>$</p>
+                            <p class="plus">+</p>
+                        </div>
+                    </div>
+                    <!--forth child-->
+                    <div class="child-div fruits vegetarian"   >
+                        <img class="productImage" src="/images/fruit-pear.jpg" alt="">
+                        <p class="title">Bartlett Pears</p>
+                        <div>
+                            <p class="productPrice"><span class="priceNumber" >8.35</span>$</p>
+                            <p class="plus">+</p>
+                        </div>
+                    </div>
+                    <!--fifth child-->
+                    <div class="child-div fruits vegetarian"  > 
+                        <img  class="productImage" src="/images/fruits-orange.jpg" alt="">
+                        <p class="title">Valencia Oranges</p>
+                        <div >
+                            <p class="productPrice"><span class="priceNumber">4.35</span>$</p>
+                            <p class="plus">+</p>
+                        </div>
+                    </div>
+                    <!--sixth child-->
+                    <div class="child-div fruits vegetarian"  > 
+                        <img class="productImage" src="/images/fruit-blubery.jpg" alt="">
+                        <p class="title">Highbush Blueberries</p>
+                        <div>
+                            <p class="productPrice"><span class="priceNumber">3.35</span>$</p>
+                            <p class="plus">+</p>
+                        </div>
+                    </div>
+                    <!--seventh child-->
+                    <div class="child-div fruits vegetarian">
+                        <img class="productImage" src="/images/fruit-raspbery.jpg" alt="">
+                        <p class="title">Red Raspberries</p>
+                        <div>
+                            <p class="productPrice"><span class="priceNumber">6.30</span>$</p>
+                            <p class="plus">+</p>
+                        </div>
+                    </div>
+                    <!--eight child-->
+                    <div class="child-div fruits vegetarian" >
+                        <img class="productImage" src="/images/fruit-frapefruit.jpg" alt="">
+                        <p class="title">Ruby Red Grapefruit</p>
+                        <div>
+                            <p class="productPrice"><span class="priceNumber">5.00</span>$</p>
+                            <p class="plus">+</p>
+                        </div>
+                    </div>
+                    <!--ninth child-->
+                    <div class="child-div fruits vegetarian" >
+                        <img class="productImage" src="/images/fruit-kiwi.jpg" alt="">
+                        <p class="title">Green Kiwi</p>
+                        <div>
+                            <p class="productPrice"><span class="priceNumber">4.75</span>$</p>
+                            <p class="plus">+</p>
+                        </div>
+                    </div>
+
+                    <!--vegetables children-->
+                    <!--10th child-->
+                    <div class="child-div vegetables vegetarian"  >
+                        <img class="productImage" src="/images/vegetables-potato.jpg" alt="">
+                        <p class="title">Yellow Potatoes</p>
+                        <div>
+                            <p class="productPrice"><span class="priceNumber">7.20</span>$</p>
+                            <p class="plus">+</p>
+                        </div>
+                    </div>
+                    <!--11th child-->
+                    <div class="child-div vegetables vegetarian"   >
+                        <img class="productImage" src="/images/vegetables- tomato.jpg" alt="">
+                        <p class="title">Cherry Tomatoes</p>
+                        <div>
+                            <p class="productPrice"><span class="priceNumber">3.25</span>$</p>
+                            <p class="plus">+</p>
+                        </div>
+                    </div>
+                    <!--12th child-->
+                    <div class="child-div vegetables vegetarian"  >
+                        <img class="productImage" src="/images/vegetables - cucumber.jpg" alt="">
+                        <p class="title">Pickling Cucumbers</p>
+                        <div>
+                            <p class="productPrice"><span class="priceNumber">5.00</span>$</p>
+                            <p class="plus">+</p>
+                        </div>
+                    </div>
+                    <!--13th child-->
+                    <div class="child-div vegetables vegetarian" >
+                        <img class="productImage" src="/images/vegetables-avocado.jpg" alt="">
+                        <p class="title">Fuerte Avocado</p>
+                        <div>
+                            <p class="productPrice"><span class="priceNumber">5.20</span>$</p>
+                            <p class="plus">+</p>
+                        </div>
+                    </div>
+                    <!--14th child-->
+                    <div class="child-div vegetables vegetarian" >
+                        <img class="productImage" src="/images/vegetables-carrots.jpg" alt="">
+                        <p class="title">Orange Carrots</p>
+                        <div>
+                            <p class="productPrice"><span class="priceNumber">6.20</span>$</p>
+                            <p class="plus">+</p>
+                        </div>
+                    </div>
+                    <!--15th child-->
+                    <div class="child-div vegetables vegetarian" >
+                        <img class="productImage" src="/images/vegetables-eggplant.jpg" alt="">
+                        <p class="title">Italian Eggplant</p>
+                        <div>
+                            <p class="productPrice"><span class="priceNumber">8.95</span>$</p>
+                            <p class="plus">+</p>
+                        </div>
+                    </div>
+                    <!--16th child-->
+                    <div class="child-div vegetables vegetarian" > 
+                        <img class="productImage" src="/images/vegetables - garlic.jpg" alt="">
+                        <p class="title">Softneck Garlic</p>
+                        <div>
+                            <p class="productPrice"><span class="priceNumber">6.35</span>$</p>
+                            <p class="plus">+</p>
+                        </div>
+                    </div>
+                    <!--17th child-->
+                    <div class="child-div vegetables vegetarian" >
+                        <img class="productImage" src="/images/vegetables-greenonions.jpg" alt="">
+                        <p class="title">Spring Onions</p>
+                        <div>
+                            <p class="productPrice"><span class="priceNumber">4.25</span>$</p>
+                            <p class="plus">+</p>
+                        </div>
+                    </div>
+                    <!--18th child-->
+                    <div class="child-div vegetables vegetarian">
+                        <img class="productImage" src="/images/vegetables-lettuce.jpg" alt="">
+                        <p class="title">Romaine Lettuce</p>
+                        <div>
+                            <p class="productPrice"><span class="priceNumber">3.00</span>$</p>
+                            <p class="plus">+</p>
+                        </div>
+                    </div>
+
+                    <!--Meat children-->
+                    <!--19th child-->
+                    <div class="child-div meat" >
+                        <img class="productImage" src="/images/meat-beef.jpg" alt="">
+                        <p class="title">Beaf: Filet Mignon</p>
+                        <div>
+                            <p class="productPrice"><span class="priceNumber">7.00</span>$</p>
+                            <p class="plus">+</p>
+                        </div>
+                    </div>
+                    <!--20th child-->
+                    <div class="child-div meat" >
+                        <img class="productImage" src="/images/meat-pork.jpg" alt="">
+                        <p class="title">Pork Loin Cuts</p>
+                        <div>
+                            <p class="productPrice"><span class="priceNumber">21.00</span>$</p>
+                            <p class="plus">+</p>
+                        </div>
+                    </div>
+                    <!--21th child-->
+                    <div class="child-div meat" >
+                        <img class="productImage" src="/images/meat-chiken'.jpg" alt="">
+                        <p class="title">Whole Chicken</p>
+                        <div>
+                            <p class="productPrice"><span class="priceNumber">15.00</span>$</p>
+                            <p class="plus">+</p>
+                        </div>
+                    </div>
+                    <!--22th child-->
+                    <div class="child-div meat" >
+                        <img class="productImage" src="/images/meat-goat.jpg" alt="">
+                        <p class="title">Ground Goat</p>
+                        <div>
+                            <p class="productPrice"><span class="priceNumber">13.00</span>$</p>
+                            <p class="plus">+</p>
+                        </div>
+                    </div>
+                    <!--23th child-->
+                    <div class="child-div meat" > 
+                        <img class="productImage" src="/images/meat-lamb.webp" alt="">
+                        <p class="title">Lamb Shoulder</p>
+                        <div>
+                            <p class="productPrice"><span class="priceNumber">12.00</span>$</p>
+                            <p class="plus">+</p>
+                        </div>
+                    </div>
+                    <!--24th child-->
+                    <div class="child-div meat" >
+                        <img class="productImage" src="/images/meat-turkey.webp" alt="">
+                        <p class="title">Whole Turkey</p>
+                        <div>
+                            <p class="productPrice"><span class="priceNumber">17.00</span>$</p>
+                            <p class="plus">+</p>
+                        </div>
+                    </div>
+                    <!--25th child-->
+                    <div class="child-div meat" >
+                        <img class="productImage" src="/images/meat-duck.jpg" alt="">
+                        <p class="title">Whole Duck</p>
+                        <div>
+                            <p class="productPrice"><span class="priceNumber">25.00</span>$</p>
+                            <p class="plus">+</p>
+                        </div>
+                    </div>
+                    <!--26th child-->
+                    <div class="child-div meat" >
+                        <img class="productImage" src="/images/meat-venison.jpg" alt="">
+                        <p class="title">Venison: Tenderloin</p>
+                        <div>
+                            <p class="productPrice"><span class="priceNumber">25.00</span>$</p>
+                            <p class="plus">+</p>
+                        </div>
+                    </div>
+                    <!--27th child-->
+                    <div class="child-div meat" >
+                        <img class="productImage" src="/images/meat-bison.jpg" alt="">
+                        <p class="title">Bison: Tenderloin</p>
+                        <div>
+                            <p class="productPrice"><span class="priceNumber">25.00</span>$</p>
+                            <p class="plus">+</p>
+                        </div>
+                    </div>
+
+                    <!--Milk & Eggs & CHEESE-->
+                    
+                    <!--28th child-->
+                    <div class="child-div milk saled vegetarian">
+                        <img class="productImage" src="/images/cheese-chedar.jpg" alt="">
+                        <p class="title">Cheese: Cheddar</p>
+                        <div>
+                            <p class="productPrice"><span class="priceNumber">15.00</span>$</p>
+                            <p class="plus">+</p>
+                        </div>
+                    </div>
+                    <!--29th child-->
+                    <div class="child-div milk saled vegetarian" >
+                        <img class="productImage" src="/images/cheese-brie.jpg" alt="">
+                        <p class="title">Cheese: Brie</p>
+                        <div>
+                            <p class="productPrice"><span class="priceNumber">10.00</span>$</p>
+                            <p class="plus">+</p>
+                        </div>
+                    </div>
+                    <!--30th child-->
+                    <div class="child-div milk vegetarian" >
+                        <img class="productImage" src="/images/cheese-gorgonzola.jpg" alt="">
+                        <p class="title">Cheese: Gorgonzola</p>
+                        <div>
+                            <p class="productPrice"><span class="priceNumber">12.00</span>$</p>
+                            <p class="plus">+</p>
+                        </div>
+                    </div>
+                    <!--31th child-->
+                    <div class="child-div milk vegetarian" >
+                        <img class="productImage" src="/images/cheese-parmiggano.jpg" alt="">
+                        <p class="title">Cheese: Parmigiano</p>
+                        <div>
+                            <p class="productPrice"><span class="priceNumber">17.00</span>$</p>
+                            <p class="plus">+</p>
+                        </div>
+                    </div>
+                    <!--32th child-->
+                    <div class="child-div milk vegetarian" >
+                        <img class="productImage" src="/images/cheese- rosso.jpg" alt="">
+                        <p class="title">Cheese:Rosso</p>
+                        <div>
+                            <p class="productPrice"><span class="priceNumber">27.00</span>$</p>
+                            <p class="plus">+</p>
+                        </div>
+                    </div>
+                    <!--33th child-->
+                    <div class="child-div milk saled vegetarian">
+                        <img class="productImage" src="/images/eggs.jpg" alt="">
+                        <p class="title">Duck Eggs</p>
+                        <div>
+                            <p class="productPrice"><span class="priceNumber">5.00</span>$</p>
+                            <p class="plus">+</p>
+                        </div>
+                    </div>
+                    <!--34th child-->
+                    <div class="child-div milk vegetarian" >
+                        <img class="productImage" src="/images/eggs2.jpg" alt="">
+                        <p class="title">Chicken Eggs</p>
+                        <div>
+                            <p class="productPrice"><span class="priceNumber">5</span>$</p>
+                            <p class="plus">+</p>
+                        </div>
+                    </div>
+                    <!--35th child-->
+                    <div class="child-div milk saled vegetarian"  >
+                        <img class="productImage" src="/images/milk1.jpg" alt="">
+                        <p class="title">Whole Milk</p>
+                        <div>
+                            <p class="productPrice"><span class="priceNumber">3</span>$</p>
+                            <p class="plus">+</p>
+                        </div>
+                    </div>
+                    <!--36th child-->
+                    <div class="child-div milk saled vegetarian"  >
+                        <img class="productImage" src="/images/milk2.jpg" alt="">
+                        <p class="title">2% Milk  </p>
+                        <div>
+                            <p class="productPrice"><span class="priceNumber">3.35</span>$</p>
+                            <p class="plus">+</p>
+                        </div>
+                    </div>
+                    <!--FLOWERS -->
+                    <!--37child-->
+                    
+                    <div class="child-div flowers saled" >
+                        <img  class="productImage" src="/images/flowers -Daisy .jpg" alt="">
+                        <p class="title">Daisy</p>
+                        <div>
+                            <p class="productPrice"><span class="priceNumber">1.35</span>$</p>
+                            <p class="plus">+</p>
+                        </div>
+                    </div>
+                    <!--38th child-->
+                    <div class="child-div flowers" >
+                        <img class="productImage" src="/images/flowers- Cherry Blossom.jpg" alt="">
+                        <p class="title">Cherry Blossom</p>
+                        <div>
+                            <p  class="productPrice"><span class="priceNumber">1.35</span>$</p>
+                            <p class="plus">+</p>
+                        </div>
+                    </div>
+                    <!--39th child-->
+                    <div  class="child-div flowers " >
+                        <img  class="productImage" src="/images/flowers- Marigold.jpg" alt="">
+                        <p class="title" >Marigold</p>
+                        <div>
+                            <p class="productPrice"><span class="priceNumber">2.25</span>$</p>
+                            <p class="plus">+</p>
+                        </div>
+                    </div>
+                    <!--40th child-->
+                    <div class="child-div flowers saled" >
+                        <img  class="productImage" src="/images/flowers- sunflower.jpg" alt="">
+                        <p class="title" >Sunflower</p>
+                        <div>
+                            <p class="productPrice"><span class="priceNumber">4.25</span>$</p>
+                            <p class="plus">+</p>
+                        </div>
+                    </div>
+                    <!--41th child-->
+                    <div class="child-div flowers" >
+                        <img   class="productImage" src="/images/flowers-lilu.jpg" alt="">
+                        <p class="title">Lilu</p>
+                        <div>
+                            <p  class="productPrice"><span class="priceNumber">1.35</span>$</p>
+                            <p  class="plus">+</p>
+                        </div>
+                    </div>
+                    <!--42th child-->
+                    <div class="child-div flowers" >
+                        <img  class="productImage" src="/images/flowers-orchid.jpg" alt="">
+                        <p class="title">Orchid</p>
+                        <div>
+                            <p class="productPrice"><span class="priceNumber">1.25</span>$</p>
+                            <p class="plus">+</p>
+                        </div>
+                    </div>
+                    <!--43th child-->
+                    <div class="child-div flowers saled" >
+                        <img  class="productImage" src="/images/flowers-Peony.jpg" alt="">
+                        <p class="title">Peony</p>
+                        <div>
+                            <p class="productPrice"><span class="priceNumber">1.20</span>$</p>
+                            <p class="plus">+</p>
+                        </div>
+                    </div>
+                    <!--44th child-->
+                    <div class="child-div flowers">
+                        <img class="productImage" src="/images/flowers-tulip.jpg" alt="">
+                        <p class="title">Tulip</p>
+                        <div>
+                            <p class="productPrice"><span class="priceNumber">1.35</span>$</p>
+                            <p class="plus">+</p>
+                        </div>
+                    </div>
+                    <!--45th child-->
+                    <div class="child-div flowers saled" >
+                        <img class="productImage" src="/images/flowers-rose.jpg" alt="">
+                        <p class="title">Rose</p>
+                        <div>
+                            <p class="productPrice"><span class="priceNumber">1.35</span>$</p>
+                            <p class="plus">+</p>
+                        </div>
+                    </div>
+                    
+
+                    <!--Baskets-->
+                    <!--46th child-->
+                    <div style="margin-top:40px; height:640px;" class="child-div basketsInProducts">
+                        <img class="basketImage"  src="/images/basket-img.jpg" alt="" >
+                        <div id="basket-under-image">
+                            <h3 class="productTitle">Small Basket</h3>
+                            <ol class="insideTheBusket">
+                                <li>6 Eggs</li>
+                                <li>1 litre of milk</li>
+                                <li> 1kg potatoes, 1 kg cucumbers</li>
+                                <li>1 kg apples, 3 bunch of grapes</li>
+                                <li>2 chickens</li>
+                                <li>Free flowers from our greenhouse</li>
+                            </ol>
+                        </div>
+
+                        <p class="basketProductsPrice"><span class="basketPrice">20.00</span>$</p>
+                        <button class="purchaseBasket">Purchase Basket</button>
+                    </div>
+
+                    <!--47th child-->
+                    <div  style="margin-top:40px; height:640px;" class="child-div basketsInProducts">
+                        <img class="basketImage" src="/images/basket-img.jpg" alt="" >
+                        <div id="basket-under-image">
+                            <h3 class="productTitle">Medium Basket</h3>
+                            <ol class="insideTheBusket">
+                                <li>12 Eggs</li>
+                                <li>4 litre of milk</li>
+                                <li>3kg potatoes, 3kg cucumbers</li>
+                                <li>2kg apples, 5 bunch of grapes</li>
+                                <li>4 chickens</li>
+                                <li>Free flowers from our greenhouse</li>
+                            </ol>
+                        </div>
+
+                        <p class="basketProductsPrice"><span  class="basketPrice">50.00</span>$</p>
+                        <button class="purchaseBasket">Purchase Basket</button>
+                    </div>
+
+                    <!--48th child-->
+                    <div  style="margin-top:40px; height:640px;" class="child-div basketsInProducts">
+                        <img class="basketImage" src="/images/basket-img.jpg" alt="">
+                        <div id="basket-under-image">
+                            <h3 class="productTitle">Large Basket</h3>
+                            <ol class="insideTheBusket">
+                                <li>20 Eggs</li>
+                                <li>6 litre of milk</li>
+                                <li>5kg potatoes, 5kg cucumbers</li>
+                                <li>5kg apples, 8 bunch of grapes</li>
+                                <li>8 chickens</li>
+                                <li>Free flowers from our greenhouse</li>
+                            </ol>
+                        </div>
+
+                        <p class="basketProductsPrice"><span class="basketPrice">80.00</span>$</p>
+                        <button class="purchaseBasket">Purchase Basket</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!--footer will be same on each page-->
+    <footer>
+        <div class="first-footer-div">
+            <img src="/designs/real-logo-without-backgroun.png" alt="">
+            <p><a href="/index.html">Morgo's Homestead</a></p>
+        </div>
+
+        <!--mother div-->
+        <div class="mother-div">
+            <!--quick links-->
+            <div class="child-div-footer">
+                <h3>Quick Links</h3>
+                <p><a style="text-decoration: none; color:#000" href="/shop.html">Shop</a></p>
+                <p><a style="text-decoration: none; color:#000" href="/aboutUs.html">About Us</a></p>
+                <p><a style="text-decoration: none; color:#000" href="/signin.html">Sign In</a></p>
+            </div>
+            <!--products-->
+            <div class="child-div-footer">
+                <h3>Products</h3>
+                <p><a style="text-decoration: none; color:#000" href="/shop.html">Baskets</a></p>
+                <p><a style="text-decoration: none; color:#000" href="/shop.html">Vegetarian</a></p>
+                <p><a style="text-decoration: none; color:#000" href="/shop.html">Dairy Products</a></p>
+            </div>
+            <!--contact us -->
+            <div style="margin-top:40px;" class="child-div-footer">
+                <h3>Contact Us</h3>
+                <form class="contact-Us">
+                    <input type="email" placeholder="Enter Your Email"> <br>
+                    <input id="message" type="text" placeholder="Message"><br>
+                    <button style="cursor:pointer">Send Message</button>
+                </form>
+            </div>
+        </div>
+
+        <h4 class="lastParagraph">2024 Morgo’s Homestead  All rights reserved.</h4>
+    </footer>
+
+    <script src="/shop.js"></script>
+   
+</body>
+</html>

@@ -1,0 +1,1024 @@
+@import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+/*css reset */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    /* overflow-x: hidden;
+    overflow-y: hidden; */
+    overflow-x: hidden;
+    height:100vh;
+    width: 100%;
+
+    font-family:'Inknut Antiqua';
+
+}
+
+
+/*styling the header part that involevs one div(logo and the farm name) and navbar
+/* *****************Header Part ********************/
+header{
+    /* writing flex in order to position elements horizontally in the center */
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items:center;
+
+    margin-top:-5px;
+    gap:25%;
+    /* width:100%; */
+    height:120px;
+    padding:0;
+    margin-left:0;
+    margin-right:0;
+}
+
+/*first-header-div - Logo and the farm name*/
+.first-header-div{
+    /* writing flex in order to position elements horizontally in the center */
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    text-align:center;
+
+    gap:0px;
+    padding:10px;
+    margin-top:-10px;
+}
+
+/*LOGO*/
+.first-header-div img{
+    width:80px;
+    height:80px;
+}
+
+/* FARM NAME */
+.first-header-div p{
+    font-size:20px;
+    margin-top:35px;
+    margin-left:-35px;
+}
+
+.first-header-div a{
+    text-decoration: none;
+    color:#000;
+}
+.first-header-div a:hover{
+    color:#D97823;
+    cursor:pointer;
+    font-weight: bold;
+    font-size:19px;
+}
+
+/* styling the navbar - shop ; About us ; Sign in */
+nav{
+    font-family:Inknut Antiqua ;
+    margin-top:19px;
+    /* margin-top:-5px; */
+
+    padding:10px;
+}
+
+ul{
+    /* writing flex in order to position elements horizontally in the center */
+    display:flex;
+    justify-content: center;
+    align-items:center;
+
+    list-style: none;
+
+    gap:40px; /*space between the ul elements */
+}
+
+li{
+    font-size:18px;
+}
+
+li a{
+    text-decoration: none;
+    color:#000;
+    
+}
+
+li a:hover{
+    color:#D97823;
+    cursor:pointer;
+    font-weight: bold;
+    font-size:19px;
+}
+
+.burger-manu{
+    width:20px;
+    height:20px; 
+    display:none
+}
+
+
+.burger-manu-div{
+    position:absolute;
+    top:5%;
+    right:1%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    width:150px;
+    height:180px;;
+    background-color:#A1A624;
+    z-index:9999;
+    border-radius:3px;
+    display:none;
+}
+
+.burger-manu-div img{
+    width:15px;
+    height:15px;
+    margin-left:120px;
+    margin-top:10px;
+    cursor:pointer;
+}
+
+.burger-manu-div p{
+    text-align:center;
+    margin-left:0px;
+}
+.burger-manu-div p a{
+    text-decoration:none;
+    color:#400505;
+    font-weight: bold;
+
+}
+
+.burger-manu-div p a:hover{
+    cursor:pointer;
+    color:#D97823;
+}
+/* styling the main part that has 6 sections */
+/* **************main part************** */
+main{
+    /* writign flex in order to position elements vertically in the center */
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    background-color: #F5F5F5;
+    height:max-content;
+ 
+    width: 100%;
+    margin-top:15px;
+    padding: 0;
+}
+
+/* styling the first main section that involves one img and 1 div */
+/* *************styling the first main section********************* */
+.first-main-section{
+    position:relative;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    width:100%;
+
+   
+}
+
+.first-main-section img{
+    position:relative;
+    width:100%;
+    height:800px;
+    object-fit:cover;
+    object-position: center;
+    border-radius:3px;
+    filter: brightness(90%);
+}
+
+.text-div{
+    position:absolute;
+    right:55%;
+    top:20%;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items:center;
+    text-align:center;
+    width:600px;
+    animation-name:appeatin-top;
+    animation-duration:2s;
+}
+
+@keyframes appeatin-top{
+    from{
+        opacity:0;
+        transform:translateY(-100px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+.text-div h1{
+    font-family: Dancing Script;
+    font-size:30px;
+}
+
+
+.signin-div{
+    position:absolute;
+    top:10%;
+    left:58%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+
+.signin-div h1{
+    color:#400505;
+    font-size:40px;
+    animation-name:appearing-left;
+    animation-duration:2s;
+}
+
+.signin-div p{
+    text-align:center;
+    font-size:16px;
+    line-height:28px;
+    margin-top:5px;
+    animation-name:appearing-left;
+    animation-duration:2s;
+}
+
+.signin-form{
+    margin-top:5px;
+    animation-name:appearing-bottom;
+    animation-duration:2s;
+}
+
+.signin-form input{
+    width:400px;
+    height:62px;
+    border-radius:6px;
+    margin-top:20px;
+    font-size:16px;
+    font-family:'Inknut Antiqua' ;
+    padding-left:10px;
+}
+
+.signin-form p{
+    color:#fff;
+    font-size:18px;
+}
+.button{
+    border-radius:3px;
+    font-size:17px;
+    font-weight: bold;
+    font-family: 'Inknut Antiqua';
+    margin-top:20px;
+    background-color: #A1A624;
+    border:none;
+    transition:0.9s;
+}
+
+.button:hover{
+    background-color:#400505;
+    cursor:pointer;
+}
+
+.no-account{
+    color:#fff;
+    font-size:18px;
+    /* margin-left:-100px;
+    margin-bottom:-50px; */
+    margin-top:20px;
+}
+
+
+#registrationButton:hover{
+    cursor:pointer;
+    color: #400505;
+    font-size:18px;
+}
+
+.registration{
+    position:absolute;
+    top:20%;
+    left:35%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    width:600px;
+    height:530px;
+    border:none;
+    z-index:9999;
+    border-radius:3px;
+    box-shadow: 25px 25px 25px #400505;
+    display:none;
+    background-color:#fff;
+}
+
+
+.registration img{
+    width:20px;
+    height:20px;
+    margin-left:550px;
+    margin-top:20px;
+    cursor:pointer;
+}
+
+.head-registration{
+    color:#400505;
+    font-size:40px;
+    margin-top:0px;
+    text-align:center;
+}
+
+
+/* p - text under the registration */
+.welcoming-p{
+    line-height: 25px;
+    text-align:center;
+
+}
+
+.registrationForm{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    font-family:'Inknut Antiqua';
+
+}
+
+
+/*input*/
+.registrationForm input{
+    width:340px;
+    height:56px;
+    border-radius:3px;
+    margin-top:20px;
+    padding-left:10px;
+    font-size:16px;
+    font-family:'Inknut Antiqua';
+    color:#400505;
+
+}
+
+.continue-btn{
+    font-weight: bold;
+    font-size:18px;
+    background-color: #A1A624;
+    transition:0.9s;
+}
+
+.continue-btn:hover{
+    cursor:pointer;
+    background-color: #400505;
+}
+/*under input paragrpah - do not have an account*/
+.register-p{
+    margin-top:5px;
+} 
+
+
+@keyframes appearing-left{
+    from{
+        opacity:0;
+        transform:translateY(-100px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+@keyframes appearing-bottom{
+    from{
+        opacity:0;
+        transform:translateY(100px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+@keyframes appearing-left{
+    from{
+        opacity:0;
+        transform:translateX(100px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateX(0)
+    }
+}
+
+/* styling the section that will be appeared when user sing in to the account */
+.second-main-section{
+    position:relative;
+    display:flex;
+    flex-direction:row;
+
+    margin-bottom:150px;
+    display:none;
+}
+
+/*catogories*/
+.category-div{
+    display:flex;
+    flex-direction:column;
+    margin-right:60px;
+    margin-top:40px;
+}
+
+.category-div h2{
+    text-align:center;
+    color:#400505;
+}
+
+/*categories - meat,fruit,vegetables...*/
+.category-div ul{
+    display:flex;
+    flex-direction:column;
+    line-height:10px;
+    margin-top:40px;
+}
+.category-div ul li{
+    transition:0.5s;
+}
+
+.category-div ul li:hover{
+    cursor:pointer;
+    color:#A1A624;
+    text-shadow: 0px 0px 15px #A1A624;
+    font-size:19px;
+}
+
+
+
+/***********************************************************/
+/* account div - it will be appeared when the user logs in the page */
+.Account-div{
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items:center;
+    gap:10px;
+    margin-top:32px;
+    margin-left:-550px;
+    margin-bottom:-50px;
+    display:none;
+}
+
+
+.Account-div img{
+    width:20px;
+    height:20px;
+}
+
+.Account-div p{
+    cursor:pointer;
+    transition:0.5s;
+}
+
+.Account-div p:hover{
+    color:#D97823;
+    font-size:19px;
+}
+
+/**********************************************************/
+/* ***************************************************************************** */
+/*the basket div - it will be appeared when user click on th plus div */
+.basket{
+    position:fixed; 
+    top:20%;
+    left: 60%; 
+    overflow-y:auto;
+    left:60%;
+    width:500px;
+    /* height:auto; */
+    max-height:70vh;
+    border:1px solid black;
+    border-radius:3px;
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items:center;
+    background-color:#A1A624;
+    display:none;
+    z-index:99999999;
+  
+}
+
+.basket h1{
+    color:#400505;
+    text-align:center;
+    margin-top:-20px;
+}
+
+
+.x-button{
+    margin-left:460px;
+    margin-top:20px;
+}
+
+/*style the links vs products div - link div and products div */
+.linksVsProducts{
+    position:relative;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    margin-right:80px;
+}
+
+/*links - Bakets, Sale , Vegetarian , img */
+.link-div{
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items:center;
+    gap:10%;
+    width:750px;
+    height:50px;
+    border-radius:6px;
+    background-color: #fff;
+    margin-top:60px;
+}
+
+.link-div p{
+    transition:0,5s;
+    color:#400505;
+    font-weight: bold;
+}
+.link-div p:hover{
+    cursor:pointer;
+    color:#A1A624;
+    text-shadow: 0px 0px 15px #A1A624;
+    font-size:19px;
+}
+/*basket*/
+.link-div img{
+    width:25px;
+    height:25px;
+    transition:0.5s;
+}
+
+.link-div img:hover{
+    cursor:pointer;
+    color:#A1A624;
+    box-shadow: 0px 0px 15px #A1A624;
+
+}
+
+
+/******************************************************************/
+/* sing in div  */
+.signIn{
+    position:absolute;
+    top:3%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    width:520px;
+    height:460px;
+    border:none;
+    z-index:9;
+    border-radius:3px;
+    box-shadow: 25px 25px 25px #400505;
+    background-color:#fff;
+    display:none;
+}
+
+.XvsSign{
+    display:flex; 
+    flex-direction:row; 
+    justify-content: center;
+    align-items: center;
+}
+
+.XvsSign h2{
+    color:#400505;
+    font-size:25px;
+    margin-left:150px;
+    margin-top:20px
+}
+
+.XvsSign img{
+    margin-bottom:31px; 
+    margin-left:150px; 
+    cursor:pointer;
+}
+
+.welcoming-p{
+    line-height: 25px;
+    text-align:center;
+   
+}
+
+.sign-in-form{
+    font-family:'Inknut Antiqua';
+    margin-top:10px;
+    margin-left:90px;
+}
+
+.sign-in-form input{
+    width:320px;
+    height:53px;
+    border-radius:3px;
+    margin-top:20px;
+    font-size:16px;
+    font-family:'Inknut Antiqua';
+    color:#400505;
+    padding-left:10px;
+}
+
+.continue-btn{
+    font-weight: bold;
+    font-size:18px;
+    background-color: #A1A624;
+    transition:0.9s;
+}
+
+.continue-btn:hover{
+    cursor:pointer;
+    background-color: #400505;
+}
+
+.register-p{
+    margin-top:5px;
+}
+
+
+.registration{
+    position:absolute;
+    top:3%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    width:600px;
+    height:500px;
+    border:none;
+    z-index:9999;
+    border-radius:3px;
+    box-shadow: 25px 25px 25px #400505;
+    background-color:#fff;
+    display:none;
+}
+
+.registration img{
+    width:20px;
+    height:20px;
+    margin-left:550px;
+    margin-top:-10px;
+    cursor:pointer;
+}
+
+.head-registration{
+    color:#400505;
+    font-size:28px;
+    margin-top:0px;
+    text-align:center;
+}
+
+/* p - text under the registration */
+.welcoming-p{
+    line-height: 25px;
+    text-align:center;
+
+}
+
+.registrationForm{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    font-family:'Inknut Antiqua';
+
+}
+/*input*/
+.registrationForm input{
+    width:340px;
+    height:56px;
+    border-radius:3px;
+    margin-top:20px;
+    padding-left:10px;
+    font-size:16px;
+    font-family:'Inknut Antiqua';
+    color:#400505;
+
+}
+
+.continue-btn{
+    font-weight: bold;
+    font-size:18px;
+    background-color: #A1A624;
+    transition:0.9s;
+}
+
+.continue-btn:hover{
+    cursor:pointer;
+    background-color: #400505;
+}
+/*under input paragrpah - do not have an account*/
+.register-p{
+    margin-top:5px;
+} 
+
+/*********************************************/
+/*personal information div  */
+.personalInfo{
+    position:absolute;
+    top:3%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    width:520px;
+    height:460px;
+    border:none;
+    z-index:9999;
+    border-radius:3px;
+    box-shadow: 25px 25px 25px #400505;
+    background-color: #8C4E4C;
+    gap:20px;
+    display:none;
+}
+
+.personalInfo h1{
+    color:#CDDBB3;
+    font-size:28px;
+}
+.exitIcon{
+    margin-left:450px;
+    margin-top:-40px;
+    cursor:pointer;
+}
+
+.personal-info-ul{
+    display:flex;
+    flex-direction:column;
+    color:#fff;
+}
+
+.personalInfo button{
+    width:150px;
+    height:46px;
+    border-radius:3px;
+    background-color: #B59F83;
+    border:none;
+    color:#000;
+    font-size:18px;
+    font-weight:bold;
+    transition:0.5s;
+    margin-top:30px;
+  
+}
+
+.personalInfo button:hover{
+    color:#fff;
+    cursor:pointer;
+    background-color: #000;
+}
+
+#personalName , #personalPassword{
+    color:#000;
+    font-weight: bold;
+    margin-left:10px;
+
+}
+/******************************************************************
+
+/*products div - Mother*/
+.products-div-mother{
+    margin-top:80px;
+    display:grid;
+    grid-template-columns:repeat(3,230px);
+    gap:23px;
+}
+
+
+/*products div -Child */
+.child-div{
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items:center;
+    background-color: #fff;
+    height:330px;
+    
+    margin-top:80px;
+}
+
+
+/*products names*/
+.title{
+    font-size:18px;
+    color:#400505;
+    font-weight: bold;
+    margin-top:10px;
+    text-align:center;
+}
+.child-div img{
+    width:230px;
+    height:200px;
+    border-radius:3px;
+    object-fit: cover;
+    margin-top:-40px;
+}
+
+.child-div div{
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items:center;
+    gap:80px;
+    margin-top:40px;
+
+}
+
+/**********************************************************/
+/* Basket divs - 3 divs that will have different height   */
+.basketsInProducts{
+    height:640px;
+    display:flex;
+    flex-direction:column;
+}
+
+/* basket image */
+.basketsInProducts img{
+    width:100%;
+    border-radius:3px;
+    height:200px;
+    filter: brightness(70%);
+    margin-top:-35px;
+}
+
+/* under-title div - texts */
+#basket-under-image{
+    display:flex;
+    flex-direction:column;
+}
+
+.productTitle{
+    margin-top:-30px;
+    color:#400505;
+}
+
+.insideTheBusket{
+    width:200px;
+    line-height: 26px;
+    margin-right:-40px;
+    margin-top:-60px;
+
+}
+.insideTheBusket li{
+    font-size:15px;
+    color:#400505;
+    font-weight: bold;
+}
+
+.basketProductsPrice{
+    font-weight:bold;
+    margin-right:110px;
+    margin-top:20px;
+}
+
+.purchaseBasket{
+    margin-top:20px;
+    height:36px;
+    width:180px;
+    border-radius:3px;
+    font-size:14px;
+    font-weight: bold;
+    font-family: 'Inknut Antiqua';
+    background-color: #A1A624;
+    border:none;
+    transition:0.9s;
+    margin-left:20px;
+
+}
+
+.purchaseBasket:hover{
+    background-color: #400505;
+    cursor:pointer;
+}
+/*************************************************************/
+
+.plus{
+    border-radius:3px;
+    width:50px;
+    height:26px;
+    background-color: #A1A624;
+    font-size:20px;
+    align-items:center;
+    display:flex;
+    justify-content: center;
+    font-weight:bold;
+    transition:0.5s;
+}
+.plus:hover{
+    background-color: #400505;
+    cursor:pointer;
+    
+}
+
+/* styling the footer part */
+/******footer part ********************/
+footer{
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items:center;
+
+    background-color: #F5F5F5;
+}
+
+.first-footer-div{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    text-align:center;
+}
+
+.first-footer-div img{
+    width:80px;
+    height:80px;
+    /* margin-left:-520px; */
+}
+
+.first-footer-div p{
+    font-size:20px;
+    margin-top:35px;
+    margin-left:-35px;
+}
+
+.first-footer-div p a{
+    text-decoration: none;
+    color:#000;
+}
+
+
+.first-footer-div a:hover{
+    color:#D97823;
+    cursor:pointer;
+    font-weight: bold;
+    font-size:19px;
+}
+
+
+/* styling the mother div  - under logo content */
+.footer-mother-div{
+    display:grid;
+    grid-template-columns:repeat(3,300px);
+
+    margin-top:0px;
+  
+}
+
+.footer-child-div{
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    /* padding-left:30px; */
+}
+
+.contact-Us input{
+    height:36px;
+    width:200px;
+    border-radius:3px;
+    padding-left:10px;
+    font-size:13px;
+    font-family:'Inknut Antiqua';
+}
+#message{
+    height:66px;
+    margin-top:10px;
+    padding-bottom:30px;
+}
+
+.contact-Us button{
+    margin-left:40px;
+    width:120px;
+    height:36px;
+    border-radius:3px;
+    font-size:13px;
+    font-family:'Inknut Antiqua';
+    margin-top:10px;
+    background-color: #A1A624;
+}
+
+.lastParagraph{
+    margin-top:30px; 
+    margin-left:-300px;
+}

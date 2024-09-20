@@ -1,0 +1,1202 @@
+@media(min-width:350px){
+    /* in the header part there will be logo and the burgerManu */
+    header{
+        gap:0%;
+    }
+    
+    .first-header-div{
+        margin-right:90px;
+    }
+    .first-header-div img{
+        width:60px;
+        height:60px;
+    }
+    .first-header-div p{
+        font-size:16px;
+        margin-left:-30px;
+    }
+
+    nav{
+        display:none;
+    }
+
+    .burger-manu{
+        display:block;
+        margin-top:20px;
+        margin-left:-10px;
+    }
+
+    /*main part */
+    main{
+        overflow-x: hidden;
+    }
+    /* first main section */
+    /* text part of the first main div - intro */
+    .first-main-div{
+        left:10%;
+    }
+
+    .intro-title{
+        font-size:25px;
+    }
+
+    .under-intro{
+        width:330px;
+        font-size:14px;
+        line-height:28px;
+    }
+
+    .first-main-div button{
+        width:130px;
+        height:40px;
+    }
+
+    /* second main section */
+    .second-main-section{
+        display:flex;
+        flex-direction:column;
+        gap:80px;
+    }
+
+    .second-main-div h1{
+        font-size:20px;
+        line-height:35px;
+    }
+
+    .second-main-div{
+        width:270px;
+    }
+
+    .intro-p-1 , .intro-p-2{
+        width:290px;
+        font-size:13px;
+    }
+
+    .icons-div{
+        grid-template-columns: repeat(2,170px);
+        margin-left:-15px;
+        margin-top:30px;
+    }
+
+    .icons-div div{
+        display:flex;
+        flex-direction:row;
+        justify-content: center;
+        align-items:center;
+        gap:2px;
+    }
+
+    .icons-div div img{
+        width:25px;
+    }
+    .icons-div div p{
+        font-size:10px;
+        font-weight: bold;
+       
+    }
+
+    .third-img-main-div{
+        grid-template-columns: repeat(2,170px);
+    }
+
+    /* styling the third main section */
+    .third-main-section{
+        margin-top:100px;
+    }
+
+    .third-main-section h1{
+        font-size:20px;
+    }
+
+    .basket-div-mother{
+        grid-template-columns: repeat(1,300px);
+    }
+
+    .sign-in-div{
+        width:350px;
+    }
+
+    .sign-in-div h2{
+        font-size:18px;
+        margin-left:150px;
+    }
+
+    .sign-in-div img{
+        margin-left:90px;
+        margin-top:30px;
+    }
+    .sign-in-form{
+        margin-left:15px;
+    }
+
+    /* stylng the forth main section */
+    .forth-main-section{
+        margin-top:80px;
+    }
+
+    .forth-main-section h1{
+        font-size:18px;
+    }
+
+    .left-icon img{
+        width:18px;
+    }
+
+    .right-icon img{
+        width:12px;
+    }
+
+    
+    .Slides{
+        grid-template-columns: repeat(3,95px);
+    }
+
+    .child-feedback-div img{
+        width:35px;
+        height:35px;
+    }
+
+    .person-name{
+        font-size:8px;
+        font-weight:bold;
+    }
+
+    .comment{
+        width:105px;
+        font-size:10px;
+        line-height:18px;
+        height:150px;
+        font-weight:500;
+    }
+
+    #rightIcon{
+        margin-left:10px;
+    }
+
+    /* fifth main section - FAQ   */
+    .fifth-main-section{
+        margin-top:50px;
+    }
+
+    .fifth-main-section h1{
+        font-size:18px;
+    }
+
+    .questions-mother-div{
+        grid-template-columns: repeat(1,300px);
+    }
+
+    .answer-div{
+        width:330px;
+        height: 750px;
+    }
+
+    .answer-div img{
+        margin-left:0px;
+    }
+
+    .answer-div h1{
+
+        text-align: center;
+    }
+
+    /* sixth main section  - get in touch */
+    .sixth-main-section{
+        margin-top:50px;
+    }
+
+    .sixth-main-section h1{
+        font-size:20px;
+    }
+
+    .sixth-main-section p{
+        width:320px;
+    }
+
+    .get-in-touch-form{
+        display:none;
+    }
+
+    .for-the-small-screen{
+        display:block;
+    }
+
+    /* footer */
+    .mother-div{
+        grid-template-columns: repeat(1,300px);
+    }
+
+    .child-div{
+        margin-top:20px;
+    }
+
+    .lastParagraph{
+        text-align:center;
+        width:350px;
+        margin-left:0px;
+        font-size:16px;
+    }
+}
+
+
+@media(min-width:650px){
+    /* in the header part there will be logo and the burgerManu */
+    header{
+        gap:10%;
+    }
+    
+    .first-header-div{
+        margin-right:250px;
+    }
+    .first-header-div img{
+        width:60px;
+        height:60px;
+    }
+    .first-header-div p{
+        font-size:16px;
+        margin-left:-20px;
+    }
+
+    nav{
+        display:none;
+    }
+
+    .burger-manu{
+        display:block;
+        margin-top:20px;
+        margin-left:-10px;
+        
+    }
+
+    .burger-manu-div{
+        right:7%;
+    }
+
+    .burger-manu-div img{
+        width:25px;
+        height:25px;
+    }
+    /*main part */
+    main{
+        overflow-x:hidden ;
+    }
+    /* first main section */
+    /* text part of the first main div - intro */
+    .first-main-div{
+        left:11%;
+    }
+
+    .intro-title{
+        font-size:30px;
+    }
+
+    .under-intro{
+        width:500px;
+        font-size:18px;
+        line-height:28px;
+    }
+
+    .first-main-div button{
+        width:150px;
+        height:46px;
+    }
+
+    /* second main section */
+    .second-main-section{
+        display:flex;
+        flex-direction:column;
+        gap:100px;
+    }
+
+    .second-main-div h1{
+        font-size:24px;
+        line-height:50px;
+        width:650px;
+    }
+
+    .second-main-div{
+        width:500px;
+    }
+
+    .intro-p-1 , .intro-p-2{
+        width:500px;
+        font-size:16px;
+    }
+
+    .icons-div{
+        grid-template-columns: repeat(2,2fr);
+        margin-left:-50px;
+        margin-top:30px;
+    }
+
+    .icons-div div{
+        display:flex;
+        flex-direction:row;
+        justify-content: center;
+        align-items:center;
+        gap:10px;
+    }
+
+    .icons-div div img{
+        width:32px;
+    }
+    .icons-div div p{
+        font-size:12px;
+        font-weight: 600;
+       
+    }
+
+    .third-img-main-div{
+        grid-template-columns: repeat(2,250px);
+        grid-template-rows: repeat(2,290px);
+    }
+
+    /* styling the third main section */
+    .third-main-section{
+        margin-top:100px;
+    }
+
+    .third-main-section h1{
+        font-size:29px;
+    }
+
+    .basket-div-mother{
+        grid-template-columns: repeat(1,300px);
+    }
+
+    .sign-in-div{
+        width:350px;
+    }
+
+    .sign-in-div h2{
+        font-size:18px;
+        margin-left:150px;
+    }
+
+    .sign-in-div img{
+        margin-left:90px;
+        margin-top:30px;
+    }
+    .sign-in-form{
+        margin-left:15px;
+    }
+
+    /* stylng the forth main section */
+    .forth-main-section{
+        margin-top:80px;
+    }
+
+    .forth-main-section h1{
+        font-size:25px;
+    }
+
+    .left-icon img{
+        width:30px;
+    }
+
+    .right-icon img{
+        width:20px;
+    }
+
+    
+    .Slides{
+        grid-template-columns: repeat(3,150px);
+    }
+
+    .child-feedback-div img{
+        width:50px;
+        height:50px;
+    }
+
+    .person-name{
+        font-size:12px;
+        font-weight:bold;
+    }
+
+    .comment{
+        width:150px;
+        font-size:10px;
+        line-height:23px;
+        height:150px;
+        font-weight:500;
+    }
+
+    #rightIcon{
+        margin-left:10px;
+    }
+    #leftIcon:hover{
+        margin-left:20px;
+    }
+    /* fifth main section - FAQ   */
+    .fifth-main-section{
+        margin-top:50px;
+    }
+
+    .fifth-main-section h1{
+        font-size:28px;
+    }
+
+    .questions-mother-div{
+        grid-template-columns: repeat(1,300px);
+    }
+
+    .answer-div{
+        width:550px;
+        height:550px;
+    }
+
+    .answer-div img{
+        margin-left:0px;
+    }
+
+    .answer-div h1{
+        line-height:38px;
+        text-align: center;
+    }
+
+    /* sixth main section  - get in touch */
+    .sixth-main-section{
+        margin-top:50px;
+    }
+
+    .sixth-main-section h1{
+        font-size:30px;
+    }
+
+    .sixth-main-section p{
+        width:580px;
+    }
+
+    .get-in-touch-form{
+        display:none;
+    }
+
+    .for-the-small-screen{
+        display:block;
+    }
+
+    /* footer */
+    .mother-div{
+        grid-template-columns: repeat(1,300px);
+    }
+
+    .child-div{
+        margin-top:20px;
+    }
+
+    .lastParagraph{
+        text-align:center;
+        width:350px;
+        margin-left:0px;
+        font-size:16px;
+    }
+}
+
+@media(min-width:1036px){
+    /* in the header part there will be logo and the burgerManu */
+    header{
+        gap:15%;
+        overflow-x: hidden;
+ 
+    }
+    
+    .first-header-div{
+        margin-right:250px;
+    }
+    .first-header-div img{
+        width:80px;
+        height:80px;
+    }
+    .first-header-div p{
+        font-size:20px;
+        margin-left:-35px;
+    }
+
+    nav{
+        display:none;
+    }
+
+    .burger-manu{
+        display:block;
+        margin-top:20px;
+        margin-left:-10px;
+        
+    }
+
+    .burger-manu-div{
+        right:15%;
+    }
+
+    .burger-manu-div img{
+        width:15px;
+        height:15px;
+    }
+    /*main part */
+    /* first main section */
+    /* text part of the first main div - intro */
+    main{
+        overflow-x: hidden;
+    
+    }
+    .first-main-div{
+        left:22%;
+    }
+
+    .intro-title{
+        font-size:30px;
+    }
+
+    .under-intro{
+        width:500px;
+        font-size:18px;
+        line-height:28px;
+    }
+
+    .first-main-div button{
+        width:150px;
+        height:46px;
+    }
+
+    /* second main section */
+    .second-main-section{
+        display:flex;
+        flex-direction:column;
+        gap:100px;
+    }
+
+    .second-main-div h1{
+        font-size:24px;
+        line-height:50px;
+        width:650px;
+    }
+
+    .second-main-div{
+        width:550px;
+    }
+
+    .intro-p-1 , .intro-p-2{
+        width:550px;
+        font-size:16px;
+    }
+
+    .icons-div{
+        grid-template-columns: repeat(2,2fr);
+        margin-left:-70px;
+        margin-top:30px;
+    }
+
+    .icons-div div{
+        display:flex;
+        flex-direction:row;
+        justify-content: center;
+        align-items:center;
+        gap:10px;
+    }
+
+    .icons-div div img{
+        width:32px;
+    }
+    .icons-div div p{
+        font-size:12px;
+        font-weight: 600;
+       
+    }
+
+    .third-img-main-div{
+        grid-template-columns: repeat(2,280px);
+        grid-template-rows: repeat(2,330px);
+    }
+
+    /* styling the third main section */
+    .third-main-section{
+        margin-top:100px;
+    }
+
+    .third-main-section h1{
+        font-size:29px;
+    }
+
+    .basket-div-mother{
+        grid-template-columns: repeat(1,300px);
+    }
+
+    .sign-in-div{
+        width:350px;
+    }
+
+    .sign-in-div h2{
+        font-size:18px;
+        margin-left:150px;
+    }
+
+    .sign-in-div img{
+        margin-left:90px;
+        margin-top:30px;
+    }
+    .sign-in-form{
+        margin-left:15px;
+    }
+
+    /* stylng the forth main section */
+    .forth-main-section{
+        margin-top:80px;
+    }
+
+    .forth-main-section h1{
+        font-size:30px;
+    }
+
+    .left-icon img{
+        width:30px;
+    }
+
+    .right-icon img{
+        width:20px;
+    }
+
+    
+    .Slides{
+        grid-template-columns: repeat(3,200px);
+    }
+
+    .child-feedback-div img{
+        width:50px;
+        height:50px;
+    }
+
+    .person-name{
+        font-size:12px;
+        font-weight:bold;
+    }
+
+    .comment{
+        width:150px;
+        font-size:10px;
+        line-height:23px;
+        height:150px;
+        font-weight:500;
+    }
+
+    #rightIcon{
+        margin-left:10px;
+    }
+    #leftIcon:hover{
+        margin-left:20px;
+    }
+    /* fifth main section - FAQ   */
+    .fifth-main-section{
+        margin-top:50px;
+    }
+
+    .fifth-main-section h1{
+        font-size:28px;
+    }
+
+    .questions-mother-div{
+        grid-template-columns: repeat(1,300px);
+    }
+
+    .answer-div{
+        width:550px;
+        height:550px;
+    }
+
+    .answer-div img{
+        margin-left:0px;
+    }
+
+    .answer-div h1{
+        line-height:38px;
+        text-align: center;
+    }
+
+    /* sixth main section  - get in touch */
+    .sixth-main-section{
+        margin-top:50px;
+    }
+
+    .sixth-main-section h1{
+        font-size:30px;
+    }
+
+    .sixth-main-section p{
+        width:580px;
+    }
+
+    .get-in-touch-form{
+        display:none;
+    }
+
+    .for-the-small-screen{
+        display:block;
+    }
+
+    /* footer */
+    footer{
+        overflow-x: hidden;
+    }
+    .mother-div{
+        grid-template-columns: repeat(1,300px);
+    }
+
+    .child-div{
+        margin-top:20px;
+    }
+
+    .lastParagraph{
+        text-align:center;
+        width:350px;
+        margin-left:0px;
+        font-size:16px;
+    }
+}
+
+@media(min-width:1300px){
+    /* in the header part there will be logo and the burgerManu */
+    header{
+        overflow-x: hidden;
+        /* writing flex in order to position elements horizontally in the center */
+        display:flex;
+        flex-direction:row;
+        justify-content: center;
+        align-items:center;
+
+        margin-top:-5px;
+        gap:25%;
+        /* width:100%; */
+        height:120px;
+        padding:0;
+        margin-left:0;
+        margin-right:0;
+    }
+
+    .first-header-div{
+         /* writing flex in order to position elements horizontally in the center */
+        display:flex;
+        justify-content: center;
+        align-items:center;
+        text-align:center;
+
+        gap:0px;
+        padding:10px;
+        margin-top:-10px;
+        margin-right:0px;
+    }
+    .first-header-div img{
+        width:80px;
+        height:80px;
+    }
+    .first-header-div p{
+        font-size:20px;
+        margin-top:35px;
+        margin-left:-35px;
+    }
+
+    .first-header-div a{
+        text-decoration: none;
+        color:#000;
+    }
+    .first-header-div a:hover{
+        color:#D97823;
+        cursor:pointer;
+        font-weight: bold;
+        font-size:19px;
+    }
+    
+
+    nav{
+        display:block;
+        font-family:Inknut Antiqua ;
+        margin-top:19px;
+        /* margin-top:-5px; */
+
+        padding:10px;
+    }
+
+    .burger-manu{
+        display:none;
+        margin-top:20px;
+        margin-left:-10px;
+        
+    }
+
+    /*main part */
+    /* first main section */
+    /* text part of the first main div - intro */
+    main{
+        overflow-x: hidden;
+        position: relative;
+        /* writign flex in order to position elements vertically in the center */
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+        background-color: #F5F5F5;
+    
+        width: 100%;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .first-main-section{
+        position:relative;
+        gap:0px;
+        overflow: hidden;
+    }
+    
+    .first-main-section img{
+        position:relative;
+        width:1498px;
+     
+        width: 100vw; 
+        height:550px;
+        object-fit: cover;
+        border-radius:3px;
+        filter: brightness(70%);
+      
+    
+    }
+    
+    .first-main-div{
+        position:absolute;
+        top:25%;
+        left:23.2%;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .first-main-div p{
+        color:#fff;
+    }
+
+
+    .intro-title{
+        font-size:33px;
+    }
+
+    .under-intro{
+
+        /* text-align:center; */
+        width:650px;
+        font-size:20px;
+        margin-top:5px;
+        line-height:32px;
+    }
+
+    .first-main-div button{
+        width:150px;
+        height:46px;
+        border-radius:3px;
+        font-size:15px;
+        font-family:'Inknut Antiqua';
+        background-color:#A68521;
+        color:#fff;
+        border:none;
+        margin-top:30px;
+        transition:0.9s;
+    }
+
+    /* second main section */
+    .second-main-section{
+        /* writing flex in order to position elements horizontally in the center */
+        display:flex;
+        flex-direction:row;
+        justify-content: center;
+        align-items:center;
+        margin-top:100px;
+        gap:20px;
+    }
+
+    .second-main-div h1{
+        font-size:24px;
+        line-height:50px;
+        width:650px;
+    }
+
+    .second-main-div{
+        display:flex;
+        flex-direction:column;
+        height:480px;
+        width:550px;
+    }
+
+    .intro-p-1 , .intro-p-2{
+        width:530px;
+        font-size:16px;
+        line-height:33px;
+    }
+
+    .icons-div{
+        grid-template-columns: repeat(2,2fr);
+        margin-left:-70px;
+        margin-top:30px;
+           /* writing grid in order to create desired layouts */
+        display:grid;
+        grid-template-columns: repeat(2,2fr);
+        grid-template-rows: repeat(2,60px);
+        margin-top:50px;
+    }
+
+    .icons-div div{
+        display:flex;
+        flex-direction:row;
+        justify-content: center;
+        align-items:center;
+        gap:10px;
+    }
+
+    .icons-div div img{
+        width:32px;
+    }
+    .icons-div div p{
+        font-size:12px;
+        font-weight: 600;
+    
+    }
+
+    .third-img-main-div{
+       /* writing grid in order to create desired layouts */
+       display:grid;
+       grid-template-columns: repeat(2,190px);
+       grid-template-rows: repeat(2,240px);
+       gap:10px;
+    }
+
+    /* styling the third main section */
+    .third-main-section{
+        position:relative; /* for the sign in div*/
+        /* writing flex in order to position elements vertically in the center */
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+
+        margin-top:150px;
+    }
+
+    .third-main-section h1{
+        font-size:29px;
+        font-weight: 600;
+    }
+
+    .basket-div-mother{
+        /* writing grid in order to create desired layouts */
+        display:grid;
+        grid-template-columns: repeat(3,300px);
+        margin-top:35px;
+        gap:30px;
+    }
+
+    .sign-in-div{
+        position:absolute;
+        top:25%;
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+        width:520px;
+        height:460px;
+        border:none;
+        z-index:9999;
+        border-radius:3px;
+        box-shadow: 25px 25px 25px #400505;
+        display:none;
+        background-color:#fff;
+    }
+
+    .sign-in-div h2{
+        color:#400505;
+        font-size:25px;
+        margin-left:200px;
+        margin-top:20px;
+    }
+
+    .sign-in-div img{
+        font-family:'Inknut Antiqua';
+        margin-top:10px;
+        margin-left:180px;
+    }
+    .sign-in-form{
+        font-family:'Inknut Antiqua';
+        margin-top:10px;
+        margin-left:100px;
+    }
+
+    /* stylng the forth main section */
+    .forth-main-section{
+       /* writing flex in order to position elements vertically in the center */
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+        margin-top:100px;
+        font-size:19px;
+    }
+
+    .forth-main-section h1{
+        font-size:32px;
+    }
+
+    .left-icon img{
+        width:30px;
+    }
+
+    .right-icon img{
+        width:20px;
+    }
+
+
+    .Slides{
+        display:grid;
+        grid-template-columns: repeat(3,300px);
+    
+        margin-top:50px;
+        gap:15px;
+    }
+
+    .child-feedback-div img{
+        width:100px;
+        height:100px;
+        border-radius:50%;
+        box-shadow: 0px 0px 15px #D97823;
+        align-items:center;
+    }
+
+    .person-name{
+        font-size:18px;
+        font-weight:600;
+        margin-top:15px;
+    }
+
+    .comment{
+        width:300px;
+        font-size:14px;
+        font-weight: 600;
+        text-align:center;
+        line-height:30px;
+    }
+
+    #rightIcon{
+        margin-left:10px;
+    }
+    #leftIcon:hover{
+        margin-left:20px;
+    }
+    /* fifth main section - FAQ   */
+    .fifth-main-section{
+        position:relative;
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+        margin-top:100px;
+    }
+
+    .fifth-main-section h1{
+        font-size:28px;
+    }
+
+    .questions-mother-div{
+        display:grid;
+        grid-template-columns: repeat(3,300px);
+        gap:18px;
+        margin-top:30px;
+    }
+
+    .answer-div{
+        position:absolute;
+        background-color: #fff;
+        width:700px;
+        height:400px;
+        border:1px solid #400505;
+        border-radius:3px;
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+        padding:20px;
+        box-shadow:0px 0px 55px #400505;
+        display:none;
+        }
+
+    .answer-div img{
+        width:20px;
+        height:20px;
+        margin-left:640px;
+        margin-top:-30px;
+    }
+
+    .answer-div h1{
+        color:#A1A624;
+        margin-top:0px;
+        margin-left:40px;
+    }
+
+    /* sixth main section  - get in touch */
+    .sixth-main-section{
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+        
+        margin-top:100px;
+        margin-bottom:200px;
+    }
+
+    .sixth-main-section h1{
+        font-size:30px;
+    }
+
+    .sixth-main-section p{
+        width:800px;
+        text-align:center;
+        line-height:30px;
+        font-size:17px;
+    }
+
+    .get-in-touch-form{
+        display:block;
+    }
+
+    .for-the-small-screen{
+        display:none;
+    }
+
+    /* footer */
+    footer{
+        overflow-x: hidden;
+        display:flex;
+        flex-direction:column;
+        justify-content: center;
+        align-items:center;
+    }
+    .mother-div{
+        display:grid;
+        grid-template-columns: repeat(3,300px);
+
+        margin-top:0px;
+    }
+
+    .child-div{
+        margin-top:20px;
+    }
+
+    .lastParagraph{
+        text-align:center;
+        width:800px;
+        margin-left:0px;
+        font-size:16px;
+    }
+}
+
+@media(min-width:1348){
+    .first-main-div{
+        position:absolute;
+        top:25%;
+        left:18%;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}

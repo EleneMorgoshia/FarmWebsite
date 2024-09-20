@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html  lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/homepage.css">
+    <link rel="stylesheet" href="/homepage-media.css">
+</head>
+<body>
+    
+    <!--creating the header part -->
+    <header>
+        <!--first header div - logo and the farm name-->
+        <div class="first-header-div">
+            <img src="/designs/real-logo-without-backgroun.png" alt="">
+            <p><a href="/index.html">Morgo's Homestead</a></p>
+        </div>
+
+        <!--second header div - navbar-->
+        <nav>
+            <ul>
+                <li><a href="/shop.html">Shop</a></li>
+                <li><a href="/aboutUs.html">About Us</a></li>
+                <li><a href="/signin.html">Sign In</a></li>
+            </ul>
+        </nav>
+
+       
+        <!--they will be appeared on the small screen-->
+        <img class="burger-manu" id="burgerManu" src="/images/menu.png" alt="">
+        <div class="burger-manu-div" id="burgerMenuDiv">
+            <img id="exitBtn" src="/images/x-icon.png" alt="">
+            <p><a href="/shop.html">Shop</a></p>
+            <p><a href="/aboutUs.html">About Us</a></p>
+            <p><a href="/signin.html">Sign In</a></p>
+        </div>
+    </header>
+
+    <!--creating the main part that involves 6 sections-->
+    <main>
+        <!--first main section - intro text on the img-->
+        <section class="first-main-section">
+            <img src="/images/slide-cover.jpg" alt="">
+            <!--text part-->
+            <div class="first-main-div">
+                <p class="intro-title">Deliciously Natural</p>
+                <p class="under-intro">
+                    Enjoy the natural flavors of our farm’s products. Each item is grown with care 
+                    and love.
+                </p>
+
+                <button><a href="/shop.html">Shop Now</a></button>
+            </div>
+        </section>
+
+        <!--second main section - About us info-->
+        <section class="second-main-section">
+            <!--text part -->
+            <div class="second-main-div">
+                <h1>
+                    Welcome to <br>
+                    Morgo's Homestead
+                </h1>
+                
+                <p class="intro-p-1">
+                    Since July 20th, 1995, Morgo's Homestead has provided fresh, natural products 
+                    you can trust. Each item reflects our lasting commitment to quality and care. 
+                </p>
+
+                <p class="intro-p-2">
+                    Our greenhouse grows produce and flowers, while our livestock provide eggs, cheese, and milk.
+                </p>
+
+                <!--icon divs-->
+                <div class="icons-div">
+                    <div>
+                        <img src="/images/farmer-icon.png" alt="" width="32px">
+                        <p>Professional Farmers</p>
+                    </div>
+                    <div>
+                        <img src="/images/fresh-icon.png" alt="">
+                        <p>Fresh Products</p>
+                    </div>
+                    <div>
+                        <img style="margin-left:-20px;" src="/images/sure-icon.png" alt="">
+                        <p>100% Guaranteed</p>
+                    </div>
+                    
+                    <div>
+                        <img src="/images/quality-control.png" alt="">
+                        <p>Quality Products</p>
+                    </div>
+                </div>
+            </div>
+
+            <!--images about farm-->
+            <div class="third-img-main-div">
+                <img class="img-1" style="filter: brightness(75%)" src="/images/a lot of farmers.jpg" alt="farmers">
+                <img class="img-2" style="filter: brightness(70%)"  src="/images/home-page-slider-3.jpg" alt="">
+                <img class="img-3" style="filter: brightness(80%)" src="/images/about-us-img.jpg" alt="">
+            </div>
+        </section>
+
+
+        <!--third main section - Baskets -->
+        <section id="thirdSection" class="third-main-section">
+
+             <!--it will appear if a costumer clicks to the button(purchase Basket) -->
+             <div id="singInDiv" class="sign-in-div">
+                <div style="display:flex; flex-direction:row; align-items: center;">
+                    <h2>Sign In</h2>
+                    <img id="xIcon" class="xIcon"  src="/images/x-icon.png" alt="" width="20" height="20">
+                </div>
+                <p class="welcoming-p">
+                    Welcome to Morgo's Homestead! Explore our farm’s bounty and enjoy our fresh, local offerings
+                </p>
+
+                <form class="sign-in-form">
+                    <input id="enteredName" type="text" placeholder="Enter Your UserName"> <br>
+                    <input id="enteredPassword" type="password" placeholder="Enter Your Password"> <br>
+                    <p id="incorrectData" style="color:#400505; display:none">Your email or password were incorrect.</p>
+                    <input id="continueButton" class="continue-btn" type="button" value="Continue">
+
+                    <p class="register-p">Do not have an account?<u id="registering" style="cursor:pointer">Register</u></p>
+                </form>
+            </div>
+            <h1>Produce Baskets</h1>
+            <!--Basket div-->
+            <div class="basket-div-mother">
+                <!--first basket -->
+                <div class="basket-child-div" id="first-child-basket">
+                    <img  src="/images/basket-img.jpg" alt="" >
+
+                    <div class="under-title">
+                        <h3>Small Basket</h3>
+                        <ol>
+                            <li>6 Eggs</li>
+                            <li>liter of milk</li>
+                            <li id="dif-li">1 kg potatoes, 1 kg cucumbers</li>
+                            <li>1 kg apples, 3 bunch of grapes</li>
+                            <li id="dif-li">2 chickens</li>
+                            <li id="dif-li">Free flowers from our greenhouse</li>
+                        </ol>
+
+                        <p class="price">$20.00</p>
+                        <button class="buyButton">Purchase Basket</button>
+                    </div>
+                </div>
+                <!--second basket -->
+                <div class="basket-child-div"  id="second-child-basket">
+                    <img class="dif-basket"  src="/images/basket-img.jpg" alt="" >
+                    <div class="under-title">
+                        <h3>Medium Basket</h3>
+                        <ol>
+                            <li>12 Eggs</li>
+                            <li>4 liter of milk</li>
+                            <li id="dif-li">3 kg potatoes, 3 kg cucumbers</li>
+                            <li id="dif-li">2 kg apples, 5 bunch of grapes</li>
+                            <li>4 chickens</li>
+                            <li id="dif-li">Free flowers from our greenhouse</li>
+                        </ol>
+
+                        <p class="price">$50.00</p>
+                        <button class="buyButton">Purchase Basket</button>
+                    </div>
+                </div>
+                <!--third basket-->
+                <div class="basket-child-div" id="thrid-child-basket">
+                    <img class="dif-basket" src="/images/basket-img.jpg" alt="">
+                    <div class="under-title">
+                        <h3>Large Basket</h3>
+                        <ol>
+                            <li>20 Eggs</li>
+                            <li>6 liter of milk</li>
+                            <li id="dif-li">5 kg potatoes, 5 kg cucumbers</li>
+                            <li id="dif-li">5 kg apples, 8 bunch of grapes</li>
+                            <li>8 chickens</li>
+                            <li id="dif-li">Free flowers from our greenhouse</li>
+                        </ol>
+
+                        <p class="price">$80.00</p>
+                        <button class="buyButton">Purchase Basket</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--forth main section - Feedback(Slider)-->
+        <section class="forth-main-section">
+            <h1>Hearing from our customers</h1>
+            <!--person1 -->
+            <div class="mother-slider-div" id="motherSlider">
+                <!--left icon div-->
+                <div class="left-icon">
+                    <img id="leftIcon" width="50px" src="/images/left-icon.png" alt="">
+                </div>
+
+                <!--Slide divs-->
+                <div class="Slides">
+                    <!--person1-->
+                    <div class="child-feedback-div firstCircleChild" id="div-1">
+                        <img class="personFace" src="/images/farmer-1.jpg" alt="" >
+                        <p class="person-name">Liam Smith</p>
+                        <p class="comment"> 
+                            "Morgo's Homestead offers an amazing selection of fresh produce. 
+                            The quality of products is unparalleled"
+                        </p>
+                    </div>
+                    <!--person2 -->
+                    <div class="child-feedback-div firstCircleChild" id="div-2">
+                        <img class="personFace"  src="/images/farmer-2.jpg" alt="" >
+                        <p class="person-name">Olivia Brown</p>
+                        <p class="comment"> 
+                            "I've been purchasing from Morgo's Homestead for a while now, 
+                            and I'm consistently impressed."
+                        </p>
+                    </div>
+                    <!--person3-->
+                    <div class="child-feedback-div firstCircleChild" id="div-3">
+                        <img  class="personFace" src="/images/farmer-3.jpg" alt="" >
+                        <p class="person-name">Sophia Davis</p>
+                        <p class="comment"> 
+                            "Morgo's Homestead offers an amazing selection of fresh produce. 
+                            The quality of the vegetables is unparalleled"
+                        </p>
+                    </div>
+                    <!--person4-->
+                    <div style="display:none" class="child-feedback-div secondCircleChild" id="div-4">
+                        <img class="personFace"  src="/images/farmer-4.jpg" alt="" >
+                        <p class="person-name">Ethan Taylor</p>
+                        <p class="comment"> 
+                            "The produce and meat from Morgo's Homestead are always of the highest 
+                            quality. r"
+                        </p>
+                    </div>
+                    <!--person5-->
+                    <div style="display:none" class="child-feedback-div secondCircleChild" id="div-5">
+                        <img class="personFace"  src="/images/farmer-5.jpg" alt="" >
+                        <p class="person-name">Michael Brown</p>
+                        <p class="comment"> 
+                            "I love shopping at Morgo's Homestead for their fantastic produce and 
+                            meat. The freshness is unbelivable"
+                        </p>
+                    </div>
+
+                    <!--person6-->
+                    <div style="display:none" class="child-feedback-div secondCircleChild" id="div-6">
+                        <img class="personFace"  src="/images/farmer-6.jpg" alt="" >
+                        <p class="person-name">Emma Johnson</p>
+                        <p class="comment"> 
+                            "Morgo's Homestead never disappoints with their fresh produce and meat. 
+                            The quality of products are insane"
+                        </p>
+                    </div>
+
+                    <!--person7-->
+                    <div style="display:none" class="child-feedback-div thirdCircleChild" id="div-6">
+                        <img id="personFace"  src="/images/farmer-7.jpg" alt="" >
+                        <p class="person-name">Miranda Brown</p>
+                        <p class="comment"> 
+                            "I appreciate the dedication that Morgo's Homestead puts into their work. 
+                            The products are top-notch."
+                        </p>
+                    </div>
+
+                    <!--person8-->
+                    <div style="display:none" class="child-feedback-div thirdCircleChild" id="div-6">
+                        <img class="personFace"  src="/images/farmer-8.jpeg" alt="" >
+                        <p class="person-name">Olivia Martin</p>
+                        <p class="comment"> 
+                            "Morgo's Homestead never disappoints. Their farm baskets are packed with fresh, seasonal produce, 
+                            and the taste is unbeatable. Highly recommend!"
+                        </p>
+                    </div>
+
+                    <!--person9-->
+                    <div style="display:none" class="child-feedback-div thirdCircleChild" id="div-6">
+                        <img id="personFace"  src="/images/farmer-9.jpg" alt="" >
+                        <p class="person-name">James Rodriguez</p>
+                        <p class="comment"> 
+                            "I’ve been a loyal customer of Morgo's Homestead for years. Their produce is consistently 
+                            high quality."
+                        </p>
+                    </div>
+                </div>
+                <!--right icond div-->
+                <div class="right-icon">
+                    <img id="rightIcon" src="/images/right-icon.png" alt="">
+                </div>
+            </div>
+
+            <!--circle icons div -->
+            <div class="circle-icons">
+                <div class="circle" id="circle-1"></div> <!--circle-1-->
+                <div class="circle" id="circle-2"></div> <!--circle-2-->
+                <div class="circle" id="circle-3"></div> <!--circle-3-->
+            </div>
+        </section>
+
+        <!--fifth main section - Frequently Asked Questions-->
+        <section class="fifth-main-section">
+            <!--this div will be appeared when user click's on the question-->
+            <div class="answer-div" id="answerDiv">
+                <img id="xButton" src="/images/x-icon.png" alt="">
+                <h1 id="introH1"></h1>
+                <p id="answerToQuestion">
+                </p>
+            </div>
+
+            <h1>Frequently Asked Questions</h1>
+            <!--questions div-->
+            <div  class="questions-mother-div">
+                <!--question1-->
+                <div class="question-child-div">
+                    <p>What products are available at Morgo's Homestead?</p>
+                </div>
+                <!--question2-->
+                <div class="question-child-div">
+                    <p>How can I purchase a basket from Morgo's Homes?</p>
+                </div>
+                <!--question3-->
+                <div class="question-child-div">
+                    <p>What’s included in each size of the basket?</p>
+                </div>
+                <!--question4-->
+                <div class="question-child-div">
+                    <p>Do you offer any special deals or discounts?</p>
+                </div>
+                <!--quetion5-->
+                <div class="question-child-div">
+                    <p>How do I contact you if I have a question or need assistance?</p>
+                </div>
+                <!--question6-->
+                <div class="question-child-div">
+                    <p>Are your products organic or sustainably farmed?</p>
+                </div>
+            </div>
+        </section>
+        
+        <!--sixth main section - Get in touch-->
+        <section class="sixth-main-section">
+            <h1>Get In Touch</h1>
+            <p>
+                Feel free to reach out with any questions, feedback,
+                 or just to say hello. We’re here to help and would 
+                 love to hear from you!
+            </p>
+
+            <form class="get-in-touch-form">
+                <input type="text" placeholder="Your Full Name"> 
+                <input type="text" placeholder="Your Lastname"> <br>
+                <input type="number" placeholder="Phone"> 
+                <input type="email" placeholder="Your Emaid Address"> <br>
+                <input id="message-input" type="text" placeholder="Your Message"> <br>
+                <button>Send Message</button>
+            </form>
+        
+
+            <form class="for-the-small-screen">
+                <input type="text" placeholder="Your Full Name"> <br>
+                <input type="text" placeholder="Your Lastname"> <br>
+                <input type="number" placeholder="Phone"> <br>
+                <input type="email" placeholder="Your Emaid Address"> <br>
+                <input type="text" id="messageInput" placeholder="Your Message"> <br>
+                <button>Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <!--footerpart-->
+    <footer>
+        <div class="first-footer-div">
+            <img src="/designs/real-logo-without-backgroun.png" alt="">
+            <p><a href="/index.html">Morgo's Homestead</a></p>
+        </div>
+
+        <!--mother div-->
+        <div class="mother-div">
+            <!--quick links-->
+            <div class="child-div">
+                <h3>Quick Links</h3>
+                <p><a style="text-decoration: none; color:#000" href="/shop.html">Shop</a></p>
+                <p><a style="text-decoration: none; color:#000" href="/aboutUs.html">About Us</a></p>
+                <p><a style="text-decoration: none; color:#000" href="/signin.html">Sign In</a></p>
+            </div>
+            <!--products-->
+            <div class="child-div">
+                <h3>Products</h3>
+                <p><a style="text-decoration: none; color:#000" href="/shop.html">Baskets</a></p>
+                <p><a style="text-decoration: none; color:#000" href="/shop.html">Vegetarian</a></p>
+                <p><a style="text-decoration: none; color:#000" href="/shop.html">Dairy Products</a></p>
+            </div>
+            <!--contact us -->
+            <div style="margin-top:40px;" class="child-div">
+                <h3>Contact Us</h3>
+                <form class="contact-Us">
+                    <input type="email" placeholder="Enter Your Email"> <br>
+                    <input id="message" type="text" placeholder="Message"><br>
+                    <button style="cursor:pointer">Send Message</button>
+                </form>
+            </div>
+        </div>
+
+        <h4 class="lastParagraph">2024 Morgo’s Homestead  All rights reserved</h4>
+    </footer>
+    <script src="/homePage.js"></script>
+</body>
+</html>

@@ -1,0 +1,560 @@
+@media(min-width:350px){
+    /* in the header part there will be logo and the burgerManu */
+    header{
+        gap:0%;
+    }
+    
+    .first-header-div{
+        margin-right:90px;
+    }
+    .first-header-div img{
+        width:60px;
+        height:60px;
+    }
+    .first-header-div p{
+        font-size:16px;
+        margin-left:-30px;
+    }
+
+    nav{
+        display:none;
+    }
+
+    .burger-manu{
+        display:block;
+        margin-top:20px;
+        margin-left:-10px;
+    }
+
+    /*main part */
+    /* second main section */
+    main{
+        overflow-x: hidden;
+    }
+
+    .second-main-section h1{
+        font-size:18px;
+        width:300px;
+        line-height: 28px;
+    }
+
+    /* third main section */
+    .third-main-section{
+        flex-direction:column;
+        gap:80px;
+    }
+
+    .second-main-div h1{
+        font-size:20px;
+        line-height:35px;
+    }
+
+    .second-main-div{
+        width:270px;
+    }
+
+    .intro-p-1 , .intro-p-2{
+        width:290px;
+        font-size:13px;
+    }
+
+    .icons-div{
+        grid-template-columns: repeat(2,170px);
+        margin-left:-15px;
+        margin-top:30px;
+    }
+
+    .icons-div div{
+        display:flex;
+        flex-direction:row;
+        justify-content: center;
+        align-items:center;
+        gap:2px;
+    }
+
+    .icons-div div img{
+        width:25px;
+    }
+    .icons-div div p{
+        font-size:10px;
+        font-weight: bold;
+       
+    }
+
+    .third-img-main-div{
+        grid-template-columns: repeat(2,160px);
+    }
+
+    /* forth main section */
+    .forth-main-section h1{
+        font-size:20px;
+    }
+
+    .mother-team-div{
+        grid-template-columns: repeat(1,300px);
+    }
+
+    /* footer */
+    .mother-div{
+        grid-template-columns: repeat(1,300px);
+    }
+
+    .child-div{
+        margin-top:20px;
+    }
+
+    .lastParagraph{
+        text-align:center;
+        width:350px;
+        margin-left:0px;
+        font-size:16px;
+    }
+}
+
+
+@media(min-width:650px){
+    /* in the header part there will be logo and the burgerManu */
+    header{
+        gap:10%;
+    }
+    
+    .first-header-div{
+        margin-right:250px;
+    }
+    .first-header-div img{
+        width:60px;
+        height:60px;
+    }
+    .first-header-div p{
+        font-size:16px;
+        margin-left:-20px;
+    }
+
+    nav{
+        display:none;
+    }
+
+    .burger-manu{
+        display:block;
+        margin-top:20px;
+        margin-left:-10px;
+        
+    }
+
+    .burger-manu-div{
+        right:7%;
+    }
+
+    .burger-manu-div img{
+        width:18px;
+        height:18px;
+    }
+    /*main part */
+     /* second main section */
+     main{
+        overflow-x: hidden;
+    }
+
+    .second-main-section h1{
+        font-size:18px;
+        width:600px;
+        line-height: 28px;
+    }
+
+    /* third main section */
+    .third-main-section{
+        flex-direction:column;
+        gap:80px;
+    }
+
+    second-main-div h1{
+        font-size:24px;
+        line-height:50px;
+        width:650px;
+    }
+
+    .second-main-div{
+        width:500px;
+    }
+
+    .intro-p-1 , .intro-p-2{
+        width:500px;
+        font-size:16px;
+    }
+
+    .icons-div{
+        grid-template-columns: repeat(2,2fr);
+        margin-left:-50px;
+        margin-top:30px;
+    }
+
+    .icons-div div{
+        display:flex;
+        flex-direction:row;
+        justify-content: center;
+        align-items:center;
+        gap:10px;
+    }
+
+    .icons-div div img{
+        width:32px;
+    }
+    .icons-div div p{
+        font-size:12px;
+        font-weight: 600;
+       
+    }
+
+    .third-img-main-div{
+        grid-template-columns: repeat(2,250px);
+        grid-template-rows: repeat(2,290px);
+    }
+
+    /* forth main section */
+    .forth-main-section h1{
+        font-size:30px;
+    }
+
+    .mother-team-div{
+        grid-template-columns: repeat(1,300px);
+    }
+
+       /* footer */
+       .mother-div{
+        grid-template-columns: repeat(1,300px);
+    }
+
+    .child-div{
+        margin-top:20px;
+    }
+
+    .lastParagraph{
+        text-align:center;
+        width:350px;
+        margin-left:0px;
+        font-size:16px;
+    }
+}
+
+@media(min-width:1036px){
+       /* in the header part there will be logo and the burgerManu */
+       header{
+        gap:15%;
+        overflow-x: hidden;
+ 
+    }
+    
+    .first-header-div{
+        margin-right:250px;
+    }
+    .first-header-div img{
+        width:80px;
+        height:80px;
+    }
+    .first-header-div p{
+        font-size:20px;
+        margin-left:-35px;
+    }
+
+    nav{
+        display:none;
+    }
+
+    .burger-manu{
+        display:block;
+        margin-top:20px;
+        margin-left:-10px;
+        width:30px;
+        height:30px;
+    }
+
+    .burger-manu-div{
+        right:15%;
+    }
+
+    .burger-manu-div img{
+        width:15px;
+        height:15px;
+    }
+    /*main part */
+     /*main part */
+     /* second main section */
+     main{
+        overflow-x: hidden;
+    }
+
+    .second-main-section h1{
+        font-size:18px;
+        width:600px;
+        line-height: 28px;
+    }
+
+    /* third main section */
+    .third-main-section{
+        flex-direction:column;
+        gap:80px;
+    }
+
+    .second-main-div h1{
+        font-size:24px;
+        line-height:50px;
+        width:650px;
+    }
+
+    .second-main-div{
+        width:550px;
+    }
+
+    .intro-p-1 , .intro-p-2{
+        width:550px;
+        font-size:16px;
+    }
+
+    .icons-div{
+        grid-template-columns: repeat(2,2fr);
+        margin-left:-70px;
+        margin-top:30px;
+    }
+
+    .icons-div div{
+        display:flex;
+        flex-direction:row;
+        justify-content: center;
+        align-items:center;
+        gap:10px;
+    }
+
+    .icons-div div img{
+        width:32px;
+    }
+    .icons-div div p{
+        font-size:12px;
+        font-weight: 600;
+       
+    }
+
+    .third-img-main-div{
+        grid-template-columns: repeat(2,280px);
+        grid-template-rows: repeat(2,330px);
+    }
+
+    /* forth main section */
+    .forth-main-section h1{
+        font-size:30px;
+    }
+
+    .mother-team-div{
+        grid-template-columns: repeat(1,300px);
+    }
+
+     /* footer */
+     footer{
+        overflow-x: hidden;
+    }
+    .mother-div{
+        grid-template-columns: repeat(1,300px);
+    }
+
+    .child-div{
+        margin-top:20px;
+    }
+
+    .lastParagraph{
+        text-align:center;
+        width:350px;
+        margin-left:0px;
+        font-size:16px;
+    }
+}
+
+@media(min-width:1300px){
+    /* in the header part there will be logo and the burgerManu */
+    header{
+        overflow-x: hidden;
+        /* writing flex in order to position elements horizontally in the center */
+        display:flex;
+        flex-direction:row;
+        justify-content: center;
+        align-items:center;
+
+        margin-top:-5px;
+        gap:25%;
+        /* width:100%; */
+        height:120px;
+        padding:0;
+        margin-left:0;
+        margin-right:0;
+    }
+
+    .first-header-div{
+         /* writing flex in order to position elements horizontally in the center */
+        display:flex;
+        justify-content: center;
+        align-items:center;
+        text-align:center;
+
+        gap:0px;
+        padding:10px;
+        margin-top:-10px;
+        margin-right:0px;
+    }
+    .first-header-div img{
+        width:80px;
+        height:80px;
+    }
+    .first-header-div p{
+        font-size:20px;
+        margin-top:35px;
+        margin-left:-35px;
+    }
+
+    .first-header-div a{
+        text-decoration: none;
+        color:#000;
+    }
+    .first-header-div a:hover{
+        color:#D97823;
+        cursor:pointer;
+        font-weight: bold;
+        font-size:19px;
+    }
+    
+
+    nav{
+        display:block;
+        font-family:Inknut Antiqua ;
+        margin-top:19px;
+        /* margin-top:-5px; */
+
+        padding:10px;
+    }
+
+    .burger-manu{
+        display:none;
+        margin-top:20px;
+        margin-left:-10px;
+        
+    }
+
+    /*main part */
+    /*main part */
+     /*main part */
+     /* second main section */
+     main{
+        overflow-x: hidden;
+         /* writign flex in order to position elements vertically in the center */
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+        background-color: #F5F5F5;
+
+        width: 100%;
+        margin: 0 auto; /* Center the main container */
+        padding: 0;
+    }
+
+    .second-main-section h1{
+        text-align:center;
+        font-size:26px;
+        width:989px;
+        line-height:40px;
+        color:#400505;
+    }
+
+    /* third main section */
+    .third-main-section{
+        /* writing flex in order to position elements horizontally in the center */
+        display:flex;
+        flex-direction:row;
+        justify-content: center;
+        align-items:center;
+        margin-top:150px;
+        gap:20px;
+    }
+
+    .second-main-div h1{
+        font-size:24px;
+        line-height:50px;
+        width:650px;
+    }
+
+    .second-main-div{
+        width:550px;
+    }
+
+    .intro-p-1 , .intro-p-2{
+        display:flex;
+        flex-direction:column;
+        height:480px;
+    }
+
+    .icons-div{
+           /* writing grid in order to create desired layouts */
+        display:grid;
+        grid-template-columns: repeat(2,2fr);
+        grid-template-rows: repeat(2,60px);
+        margin-top:50px;
+    }
+
+    .icons-div div{
+        display:flex;
+        align-items: center;
+        gap:10px;
+    }
+
+    .icons-div div img{
+        width:32px;
+    }
+    .icons-div div p{
+        font-size:12px;
+        font-weight: 600;
+       
+    }
+
+    .third-img-main-div{
+        /* writing grid in order to create desired layouts */
+        display:grid;
+        grid-template-columns: repeat(2,190px);
+        grid-template-rows: repeat(2,240px);
+        gap:10px;
+    }
+
+    /* forth main section */
+    .forth-main-section h1{
+        font-size:30px;
+    }
+
+    .mother-team-div{
+        display:grid;
+        grid-template-columns: repeat(3,300px);
+    
+        gap:15px;
+    }
+
+      /* footer */
+      footer{
+        overflow-x: hidden;
+        display:flex;
+        flex-direction:column;
+        justify-content: center;
+        align-items:center;
+    }
+    .mother-div{
+        display:grid;
+        grid-template-columns: repeat(3,300px);
+
+        margin-top:0px;
+    }
+
+    .child-div{
+        margin-top:20px;
+    }
+
+    .lastParagraph{
+        text-align:center;
+        width:800px;
+        margin-left:0px;
+        font-size:16px;
+    }
+}
